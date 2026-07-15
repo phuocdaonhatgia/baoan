@@ -39,7 +39,7 @@ const standards = [
     code: 'TCVN', country: 'Việt Nam',
     fullName: 'Tiêu chuẩn Quốc gia Việt Nam',
     desc: 'Tiêu chuẩn bắt buộc áp dụng cho mọi công trình tại Việt Nam theo quy định của Bộ Công an và Bộ Xây dựng. Bảo An Engineering đảm bảo tuân thủ đầy đủ hệ thống TCVN hiện hành.',
-    img: '/images/dichvu/hoat-dong-thi-cong.jpg',
+    img: '/images/tieu-chuan/tcvn.jpg',
     codes: [
       { code: 'TCVN 3890:2009', name: 'Phương tiện PCCC cho nhà và công trình' },
       { code: 'TCVN 7336:2003', name: 'Hệ thống Sprinkler tự động' },
@@ -73,12 +73,12 @@ const certifications = [
 // Gallery ảnh thực tế thi công của Bảo An
 const gallery = [
   { img: '/images/tieuchuan2/tc-giai-phap.jpg',          caption: 'Giải pháp kỹ thuật PCCC' },
-  { img: '/images/tieuchuan2/tc-hoat-dong-cong-truong.jpg', caption: 'Hoạt động trên công trường' },
+  { img: '/images/dichvu/congnghe.png', caption: 'Công nghệ mới, hiện đại' },
   { img: '/images/tieuchuan2/tc-he-thong.jpg',            caption: 'Hệ thống showroom thiết bị' },
   { img: '/images/tieuchuan2/tc-lap-dat.jpg',             caption: 'Bảo quản vận chuyển đến công trường' },
   { img: '/images/tieuchuan2/tc-sp-cong-trinh.jpg',       caption: 'Sản phẩm lắp đặt tại công trình' },
-  { img: '/images/dichvu/hoat-dong-thi-cong.jpg',         caption: 'Hoạt động thi công hệ thống' },
-  { img: '/images/dichvu/bien-phap-thi-cong.jpg',         caption: 'Giải pháp thi công thực tế' },
+  { img: '/images/dichvu/ky niem 10 nam.jpg',         caption: 'Kỷ niệm 10 năm Big C' },
+  { img: '/images/dichvu/vanchuyen.png',         caption: 'Bảo quản vận chuyển an toàn' },
   { img: '/images/dichvu/tu-van-thiet-ke.jpg',            caption: 'Tư vấn thiết kế hệ thống' },
 ]
 
@@ -167,7 +167,7 @@ export default function TieuChuanPage() {
 
           {/* Gallery ảnh thi công thực tế */}
           <div className="bg-white rounded-xl border border-gray-100 p-6">
-            <h2 className="text-xl font-bold text-brand-gray mb-2">Hình ảnh thi công thực tế</h2>
+            <h2 className="text-xl font-bold text-brand-gray mb-2">Hình ảnh thực tế</h2>
             <p className="text-brand-gray-mid text-sm mb-6">
               Các công trình của Bảo An Engineering thi công theo đúng tiêu chuẩn quốc tế
             </p>

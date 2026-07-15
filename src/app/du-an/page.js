@@ -17,6 +17,7 @@ const projectGroups = [
       { name: 'Big C (tổng hợp)', detail: '24 siêu thị trên toàn quốc', systems: ['Sprinkler', 'Báo cháy tự động', 'Hosereel'], img: '/images/duan2/bigc-tong.jpg' },
       { name: 'MM Mega Market / Metro An Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/duan2/metro-an-phu.jpg' },
       { name: 'MM Mega Market / Metro Hiệp Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/duan2/metro-hiep-phu.jpg' },
+      { name: 'Siêu thị Nhật Nam', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Báo cháy tự động'], img: '/images/duan2/nhatnam.jpg' }
     ],
   },
   {
@@ -26,7 +27,7 @@ const projectGroups = [
       { name: 'VSIP Bình Dương Industrial Zone', detail: 'Bình Dương', systems: ['Báo cháy tự động', 'Chữa cháy vách tường', 'Họng nước'], img: '/images/duan2/khu-cong-nghiep.jpg' },
       { name: 'Bayer Agritech Sài Gòn', detail: 'Bình Dương', systems: ['Sprinkler', 'Báo cháy', 'Hosereel'], img: '/images/duan2/bayer-agritech.jpg' },
       { name: 'Shell Gò Dầu (TOP Solvent)', detail: 'Tây Ninh', systems: ['Chữa cháy Foam', 'Báo cháy tự động', 'Hosereel'], img: '/images/duan2/shell-go-dau.jpg' },
-      { name: 'Nhà máy (tổng hợp)', detail: 'Đồng Nai & Bình Dương', systems: ['Sprinkler', 'Báo cháy địa chỉ', 'Hosereel'], img: '/images/duan2/nha-may.jpg' },
+      { name: 'Nhà máy Dược Sanofi ', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler'], img: '/images/duan2/sanofi.jpg' },
     ],
   },
   {
@@ -35,7 +36,7 @@ const projectGroups = [
       { name: 'Khách sạn Majestic', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy địa chỉ', 'Hosereel'], img: '/images/duan2/khach-san.jpg' },
       { name: 'Trụ sở UBND TPHCM', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy tự động'], img: '/images/duan2/trung-tam.jpg' },
       { name: 'Khách sạn Bình Minh – Phan Thiết', detail: 'TP. Hồ Chí Minh', systems: ['Tổng đài điện thoại', 'Báo cháy tự động'], img: '/images/duan2/binhminphanthiet.jpg' },
-      { name: 'Dự án khác', detail: 'Toàn quốc', systems: ['Sprinkler', 'Báo cháy', 'Camera'], img: '/images/duan2/du-an-khac.jpg' },
+      { name: 'Trụ sở UBND tỉnh Đồng Nai', detail: 'Toàn quốc', systems: ['Sprinkler', 'Báo cháy tự động', 'Camera quan sát'], img: '/images/duan2/UBND-tinh-Dong-Nai.webp' },
     ],
   },
 ]

@@ -526,9 +526,6 @@ export default function SanPhamPage() {
                   <a href="tel:+84968552345" className="btn-primary">
                     Gọi: 0968 552 345
                   </a>
-                  <a href="mailto:baoan@baoanengineering.com" className="btn-outline border-white text-white hover:bg-white hover:text-brand-gray">
-                    Gửi email
-                  </a>
                   <Link href="/bao-gia" className="btn-outline border-white text-white hover:bg-white hover:text-brand-gray">
                     Form báo giá online
                   </Link>

@@ -18,7 +18,7 @@ const milestones = [
   { year: '2015', event: 'Mở chi nhánh Hà Nội, phủ sóng 3 miền Bắc — Trung — Nam' },
   { year: '2018', event: 'Đạt mốc 400 công trình hoàn thành, mở rộng xưởng chế tạo tại Đồng Nai' },
   { year: '2020', event: 'Hợp tác với Robert Bosch, FrieslandCampina, OLAM Ducati' },
-  { year: '2024', event: 'Hơn 500 công trình hoàn thành, tiếp tục phát triển mạng lưới đối tác quốc tế' },
+  { year: '2026', event: 'Hơn 500 công trình hoàn thành, tiếp tục phát triển mạng lưới đối tác quốc tế' },
 ]
 
 const strengths = [
@@ -56,7 +56,7 @@ export default function GioiThieuPage() {
 
         {/* Hero với ảnh công ty thật */}
         <div className="relative bg-brand-gray text-white py-16 overflow-hidden">
-          <Image src="/images/company/showroom-1.jpg" alt="Bảo An Engineering" fill className="object-cover opacity-25" />
+          <Image src="/images/gioi-thieu/baoan.png" alt="Bảo An Engineering" fill className="object-cover opacity-25" />
           <div className="relative z-10 container-main grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-3xl font-bold mb-4">Công ty TNHH Bảo An Engineering</h1>
@@ -78,7 +78,7 @@ export default function GioiThieuPage() {
               </div>
             </div>
             <div className="relative h-72 rounded-2xl overflow-hidden border border-gray-700">
-              <Image src="/images/company/doi-ngu.jpg" alt="Đội ngũ Bảo An Engineering" fill className="object-cover" />
+              <Image src="/images/gioi-thieu/baoan.png" alt="Bảo An Engineering banner" fill className="object-cover" />
             </div>
           </div>
         </div>

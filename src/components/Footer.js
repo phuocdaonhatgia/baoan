@@ -29,7 +29,7 @@ export default function Footer() {
       <div className="container-main py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <Image src="/images/logo.png" alt="Bảo An Engineering" width={140} height={96} className="h-10 w-auto object-contain brightness-0 invert mb-5" />
+            <Image src="/images/logo.png" alt="Bảo An Engineering" width={140} height={100} className="h-10 w-auto object-contain mb-5" />
             <p className="text-gray-400 text-sm leading-relaxed mb-4">Chuyên tư vấn, thiết kế, cung cấp và lắp đặt hệ thống PCCC theo tiêu chuẩn NFPA, APSAD, TCVN.</p>
             <div className="border-t border-gray-700 pt-4">
               <p className="text-xs text-gray-500 mb-1">Khách hàng tiêu biểu</p>

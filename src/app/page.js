@@ -40,7 +40,7 @@ const bannerSlides = [
 
 const services = [
   { num: '01', title: 'Tư vấn & Thiết kế', desc: 'Khảo sát thực địa, tính toán lưu lượng, thiết kế hệ thống đúng tiêu chuẩn NFPA, APSAD, TCVN.', img: '/images/dichvu/tu-van-thiet-ke.jpg' },
-  { num: '02', title: 'Cung cấp thiết bị', desc: 'Phân phối chính hãng Tyco, Viking, Salmson, Ansul, Ampac, Siemens — đầy đủ chứng nhận UL, FM, VdS.', img: '/images/dichvu/cung-cap-thiet-bi.jpg' },
+  { num: '02', title: 'Cung cấp thiết bị', desc: 'Phân phối chính hãng Tyco, Viking, Salmson, Ansul — đầy đủ chứng nhận UL, FM, VdS.', img: '/images/dichvu/cung-cap-thiet-bi.jpg' },
   { num: '03', title: 'Lắp đặt hệ thống', desc: 'Xưởng chế tạo riêng tại Đồng Nai, thi công đúng tiến độ, nghiệm thu bàn giao hồ sơ hoàn công.', img: '/images/dichvu/hoat-dong-thi-cong.jpg' },
   { num: '04', title: 'Bảo trì định kỳ', desc: 'Hợp đồng bảo trì dài hạn, kiểm tra định kỳ, đảm bảo hệ thống sẵn sàng hoạt động 24/7.', img: '/images/dichvu/bien-phap-thi-cong.jpg' },
 ]
@@ -74,12 +74,36 @@ const stats = [
 ]
 
 const distributors = [
-  { name: 'Tyco', country: 'Mỹ', spec: 'Sprinkler, Van, Bơm' },
-  { name: 'Viking', country: 'Mỹ', spec: 'Đầu phun Sprinkler' },
-  { name: 'Salmson', country: 'Pháp', spec: 'Bơm chữa cháy' },
-  { name: 'Seah', country: 'Hàn Quốc', spec: 'Ống thép PCCC' },
-  { name: 'Ansul', country: 'Mỹ', spec: 'Foam, Khí sạch' },
-  { name: 'Siemens', country: 'Đức', spec: 'Báo cháy, FM200' },
+  {
+    name: 'Tyco',
+    country: 'Mỹ',
+    spec: 'Sprinkler, Van, Bơm',
+    logo: '/images/nhaphanphoi/tyco.png',
+  },
+  {
+    name: 'Viking',
+    country: 'Mỹ',
+    spec: 'Đầu phun Sprinkler',
+    logo: '/images/nhaphanphoi/viking.png',
+  },
+  {
+    name: 'Salmon',
+    country: 'Pháp',
+    spec: 'Bơm chữa cháy',
+    logo: '/images/nhaphanphoi/salmon.png',
+  },
+  {
+    name: 'Seah',
+    country: 'Hàn Quốc',
+    spec: 'Ống thép PCCC',
+    logo: '/images/nhaphanphoi/seah.png',
+  },
+  {
+    name: 'Ansul',
+    country: 'Mỹ',
+    spec: 'Foam, Khí sạch',
+    logo: '/images/nhaphanphoi/ansul.png',
+  },
 ]
 
 const clients = [
@@ -222,23 +246,52 @@ export default function HomePage() {
         </section>
 
         {/* Nhà phân phối — 6 nhà */}
-        <section className="py-14 bg-brand-gray text-white">
-          <div className="container-main">
-            <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold mb-2">Nhà phân phối chính hãng</h2>
-              <p className="text-gray-400 text-sm">Mạng lưới cung cấp từ những thương hiệu PCCC hàng đầu thế giới</p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-              {distributors.map(d => (
-                <div key={d.name} className="bg-gray-800 rounded-xl p-5 text-center border border-gray-700 hover:border-brand-red transition-colors">
-                  <div className="text-white font-bold text-lg mb-1">{d.name}</div>
-                  <div className="text-brand-red text-xs mb-1">{d.country}</div>
-                  <div className="text-gray-500 text-xs leading-tight">{d.spec}</div>
-                </div>
-              ))}
-            </div>
+<section className="py-14 bg-brand-gray text-white">
+  <div className="container-main">
+    <div className="text-center mb-10">
+      <h2 className="text-2xl font-bold mb-2">
+        Nhà phân phối chính hãng
+      </h2>
+      <p className="text-gray-400 text-sm">
+        Mạng lưới cung cấp từ những thương hiệu PCCC hàng đầu thế giới
+      </p>
+    </div>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
+      {distributors.map((d) => (
+        <div
+          key={d.name}
+          className="w-full max-w-[220px] bg-gray-800 rounded-xl px-5 py-4 text-center border border-gray-700 hover:border-brand-red hover:shadow-lg transition-all duration-300"
+        >
+          {/* Tên */}
+          <div className="text-white font-bold text-lg mb-3">
+            {d.name}
           </div>
-        </section>
+
+          {/* Logo */}
+          <div className="relative w-14 h-14 mx-auto mb-2 rounded-lg overflow-hidden bg-white p-1">
+            <Image
+              src={d.logo}
+              alt={d.name}
+              fill
+              className="object-contain rounded-md"
+            />
+          </div>
+
+          {/* Quốc gia */}
+          <div className="text-brand-red text-xs mb-2">
+            {d.country}
+          </div>
+
+          {/* Mô tả */}
+          <div className="text-gray-400 text-xs leading-tight">
+            {d.spec}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Dự án tiêu biểu — ảnh từ duantrangchu */}
         <section className="py-16 bg-brand-gray-light">
