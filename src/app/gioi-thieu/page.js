@@ -37,7 +37,7 @@ const companyPhotos = [
   { img: '/images/gioithieu/congty.jpg',          cap: 'Lắp đặt thi công' },
   { img: '/images/gioithieu/banner-truong.jpg',       cap: 'Trụ sở Bảo An Đồng Nai' },
   { img: '/images/gioithieu/training.jpg',    cap: 'Huấn luyện nhân viên' },
-  { img: '/images/gioithieu/sp-cong-trinh-2.jpg',    cap: 'Sản phẩm là công trình (2)' },
+  { img: '/images/tieuchuan2/baotri.jpg',    cap: 'Bảo trì định kỳ' },
 ]
 
 export default function GioiThieuPage() {

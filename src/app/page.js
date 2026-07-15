@@ -42,7 +42,7 @@ const services = [
   { num: '01', title: 'Tư vấn & Thiết kế', desc: 'Khảo sát thực địa, tính toán lưu lượng, thiết kế hệ thống đúng tiêu chuẩn NFPA, APSAD, TCVN.', img: '/images/tieuchuan2/tuvan.jpg' },
   { num: '02', title: 'Cung cấp thiết bị', desc: 'Phân phối chính hãng các thiết có đầy đủ chứng nhận UL, FM, VdS.', img: '/images/dichvu/cungcapthietbi.jpg' },
   { num: '03', title: 'Lắp đặt hệ thống', desc: 'Xưởng chế tạo riêng tại Đồng Nai, thi công đúng tiến độ, nghiệm thu bàn giao hồ sơ hoàn công.', img: '/images/dichvu/lapdathethong.jpg' },
-  { num: '04', title: 'Bảo trì định kỳ', desc: 'Hợp đồng bảo trì dài hạn, kiểm tra định kỳ, đảm bảo hệ thống sẵn sàng hoạt động 24/7.', img: '/images/gioithieu/baotri.jpg' },
+  { num: '04', title: 'Bảo trì định kỳ', desc: 'Hợp đồng bảo trì dài hạn, kiểm tra định kỳ, đảm bảo hệ thống sẵn sàng hoạt động 24/7.', img: '/images/tieuchuan2/dinhky.jpg' },
 ]
 
 const productCategories = [
@@ -189,6 +189,47 @@ export default function HomePage() {
               <strong className="text-brand-red">Bảo An Engineering</strong> — thành lập năm 1999, chuyên môn hóa bởi tiêu chuẩn công nghiệp cao nhất về PCCC.
                <em className="text-brand-red"><br></br>"Bạn không cần nhiều, mà chỉ cần đúng!"</em >
             </p>
+          </div>
+        </section>
+        {/* Về chúng tôi — 3 ảnh từ gioithieutrangchu */}
+        <section className="py-16 bg-brand-gray-light">
+          <div className="container-main">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative rounded-xl overflow-hidden col-span-2" style={{height:'220px'}}>
+                  <Image src="/images/gioithieutrangchu/gtc-thanhvien.jpg" alt="Đội ngũ nhân viên Bảo An Engineering" fill className="object-cover" />
+                  <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-1 rounded">Đội ngũ nhân viên Bảo An Engineering</div>
+                </div>
+                <div className="relative rounded-xl overflow-hidden" style={{height:'150px'}}>
+                  <Image src="/images/gioithieutrangchu/gtc-baoan.jpg" alt="Cơ sở Bảo An Đồng Nai" fill className="object-cover" />
+                  <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">Cơ sở Đồng Nai</div>
+                </div>
+                <div className="relative rounded-xl overflow-hidden" style={{height:'150px'}}>
+                  <Image src="/images/gioithieutrangchu/gtc-truong.jpg" alt="Trụ sở Bảo An" fill className="object-cover" />
+                  <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">Trụ sở Bảo An</div>
+                </div>
+              </div>
+              <div>
+                <div className="text-brand-red font-semibold text-sm uppercase tracking-widest mb-3">Về chúng tôi</div>
+                <h2 className="text-2xl font-bold text-brand-gray mb-4">Bảo An Engineering — Thành lập từ năm 1999</h2>
+                <p className="text-brand-gray-mid leading-relaxed mb-4">
+                  Công ty TNHH Bảo An hoạt động trong lĩnh vực tư vấn thiết kế, cung cấp và lắp đặt hệ thống
+                  PCCC cho các công trình công nghiệp và thương mại trên toàn quốc.
+                </p>
+                <p className="text-brand-gray-mid leading-relaxed mb-6">
+                  Slogan: <strong className="text-brand-red">"Bạn không cần nhiều, mà chỉ cần đúng!"</strong> —
+                  phản ánh cam kết về chất lượng tiêu chuẩn kỹ thuật và dịch vụ với giá cả hợp lý nhất.
+                </p>
+                <div className="space-y-2 mb-6">
+                  {['Trung thực, tôn trọng và hợp tác', 'Cam kết tiêu chuẩn chất lượng ISO', 'Sáng tạo và hiệu quả trong từng dự án'].map(v => (
+                    <div key={v} className="flex items-center gap-3 text-sm text-brand-gray">
+                      <span className="w-1.5 h-1.5 bg-brand-red rounded-full flex-shrink-0" />{v}
+                    </div>
+                  ))}
+                </div>
+                <Link href="/gioi-thieu" className="btn-primary">Tìm hiểu thêm về chúng tôi</Link>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -339,48 +380,6 @@ export default function HomePage() {
                   {name}
                 </span>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Về chúng tôi — 3 ảnh từ gioithieutrangchu */}
-        <section className="py-16 bg-brand-gray-light">
-          <div className="container-main">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div className="grid grid-cols-2 gap-3">
-                <div className="relative rounded-xl overflow-hidden col-span-2" style={{height:'220px'}}>
-                  <Image src="/images/gioithieutrangchu/gtc-thanhvien.jpg" alt="Đội ngũ nhân viên Bảo An Engineering" fill className="object-cover" />
-                  <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-1 rounded">Đội ngũ nhân viên Bảo An Engineering</div>
-                </div>
-                <div className="relative rounded-xl overflow-hidden" style={{height:'150px'}}>
-                  <Image src="/images/gioithieutrangchu/gtc-baoan.jpg" alt="Cơ sở Bảo An Đồng Nai" fill className="object-cover" />
-                  <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">Cơ sở Đồng Nai</div>
-                </div>
-                <div className="relative rounded-xl overflow-hidden" style={{height:'150px'}}>
-                  <Image src="/images/gioithieutrangchu/gtc-truong.jpg" alt="Trụ sở Bảo An" fill className="object-cover" />
-                  <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">Trụ sở Bảo An</div>
-                </div>
-              </div>
-              <div>
-                <div className="text-brand-red font-semibold text-sm uppercase tracking-widest mb-3">Về chúng tôi</div>
-                <h2 className="text-2xl font-bold text-brand-gray mb-4">Bảo An Engineering — Thành lập từ năm 1999</h2>
-                <p className="text-brand-gray-mid leading-relaxed mb-4">
-                  Công ty TNHH Bảo An hoạt động trong lĩnh vực tư vấn thiết kế, cung cấp và lắp đặt hệ thống
-                  PCCC cho các công trình công nghiệp và thương mại trên toàn quốc.
-                </p>
-                <p className="text-brand-gray-mid leading-relaxed mb-6">
-                  Slogan: <strong className="text-brand-red">"Bạn không cần nhiều, mà chỉ cần đúng!"</strong> —
-                  phản ánh cam kết về chất lượng tiêu chuẩn kỹ thuật và dịch vụ với giá cả hợp lý nhất.
-                </p>
-                <div className="space-y-2 mb-6">
-                  {['Trung thực, tôn trọng và hợp tác', 'Cam kết tiêu chuẩn chất lượng ISO', 'Sáng tạo và hiệu quả trong từng dự án'].map(v => (
-                    <div key={v} className="flex items-center gap-3 text-sm text-brand-gray">
-                      <span className="w-1.5 h-1.5 bg-brand-red rounded-full flex-shrink-0" />{v}
-                    </div>
-                  ))}
-                </div>
-                <Link href="/gioi-thieu" className="btn-primary">Tìm hiểu thêm về chúng tôi</Link>
-              </div>
             </div>
           </div>
         </section>
