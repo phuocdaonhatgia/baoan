@@ -27,7 +27,7 @@ const bannerSlides = [
   {
     img: '/images/banner/slide-new-4.jpg',
     tag: 'Trụ sở Bảo An Engineering',
-    title: 'Công ty TNHH Bảo An — Thành lập từ năm 1999',
+    title: 'Công ty TNHH Bảo An',
     desc: '25 năm kinh nghiệm, hơn 500 công trình hoàn thành, 3 chi nhánh tại Đồng Nai, TP.HCM và Hà Nội.',
   },
   {
@@ -39,10 +39,10 @@ const bannerSlides = [
 ]
 
 const services = [
-  { num: '01', title: 'Tư vấn & Thiết kế', desc: 'Khảo sát thực địa, tính toán lưu lượng, thiết kế hệ thống đúng tiêu chuẩn NFPA, APSAD, TCVN.', img: '/images/dichvu/tu-van-thiet-ke.jpg' },
-  { num: '02', title: 'Cung cấp thiết bị', desc: 'Phân phối chính hãng Tyco, Viking, Salmson, Ansul — đầy đủ chứng nhận UL, FM, VdS.', img: '/images/dichvu/cung-cap-thiet-bi.jpg' },
-  { num: '03', title: 'Lắp đặt hệ thống', desc: 'Xưởng chế tạo riêng tại Đồng Nai, thi công đúng tiến độ, nghiệm thu bàn giao hồ sơ hoàn công.', img: '/images/dichvu/hoat-dong-thi-cong.jpg' },
-  { num: '04', title: 'Bảo trì định kỳ', desc: 'Hợp đồng bảo trì dài hạn, kiểm tra định kỳ, đảm bảo hệ thống sẵn sàng hoạt động 24/7.', img: '/images/dichvu/bien-phap-thi-cong.jpg' },
+  { num: '01', title: 'Tư vấn & Thiết kế', desc: 'Khảo sát thực địa, tính toán lưu lượng, thiết kế hệ thống đúng tiêu chuẩn NFPA, APSAD, TCVN.', img: '/images/tieuchuan2/tuvan.jpg' },
+  { num: '02', title: 'Cung cấp thiết bị', desc: 'Phân phối chính hãng các thiết có đầy đủ chứng nhận UL, FM, VdS.', img: '/images/dichvu/cungcapthietbi.jpg' },
+  { num: '03', title: 'Lắp đặt hệ thống', desc: 'Xưởng chế tạo riêng tại Đồng Nai, thi công đúng tiến độ, nghiệm thu bàn giao hồ sơ hoàn công.', img: '/images/dichvu/lapdathethong.jpg' },
+  { num: '04', title: 'Bảo trì định kỳ', desc: 'Hợp đồng bảo trì dài hạn, kiểm tra định kỳ, đảm bảo hệ thống sẵn sàng hoạt động 24/7.', img: '/images/gioithieu/baotri.jpg' },
 ]
 
 const productCategories = [
@@ -81,10 +81,10 @@ const distributors = [
     logo: '/images/nhaphanphoi/tyco.png',
   },
   {
-    name: 'Viking',
-    country: 'Mỹ',
-    spec: 'Đầu phun Sprinkler',
-    logo: '/images/nhaphanphoi/viking.png',
+    name: 'Hochiki',
+    country: 'Nhật Bản',
+    spec: 'Báo cháy',
+    logo: '/images/nhaphanphoi/hochiki.jpg',
   },
   {
     name: 'Salmon',
@@ -185,9 +185,9 @@ export default function HomePage() {
         {/* Giới thiệu nhanh */}
         <section className="bg-white py-8 border-b border-gray-100">
           <div className="container-main">
-            <p className="text-brand-gray-mid text-center text-sm leading-relaxed max-w-3xl mx-auto">
+            <p className="text-brand-gray-mid text-center text-lg leading-relaxed max-w-1xl mx-auto">
               <strong className="text-brand-red">Bảo An Engineering</strong> — thành lập năm 1999, chuyên môn hóa bởi tiêu chuẩn công nghiệp cao nhất về PCCC.
-              Slogan: <em className="text-brand-gray font-medium">"Bạn không cần nhiều, mà chỉ cần đúng!"</em>
+               <em className="text-brand-red"><br></br>"Bạn không cần nhiều, mà chỉ cần đúng!"</em >
             </p>
           </div>
         </section>
@@ -250,7 +250,7 @@ export default function HomePage() {
   <div className="container-main">
     <div className="text-center mb-10">
       <h2 className="text-2xl font-bold mb-2">
-        Nhà phân phối chính hãng
+        Nhà cung cấp chính hãng
       </h2>
       <p className="text-gray-400 text-sm">
         Mạng lưới cung cấp từ những thương hiệu PCCC hàng đầu thế giới
@@ -404,7 +404,6 @@ export default function HomePage() {
                   { code: 'NFPA', country: 'Hoa Kỳ', full: 'National Fire Protection Association' },
                   { code: 'APSAD', country: 'Pháp', full: 'Assemblée Plénière des Sociétés Assurances' },
                   { code: 'TCVN', country: 'Việt Nam', full: 'Tiêu chuẩn Quốc gia Việt Nam về PCCC' },
-                  { code: 'BS', country: 'Anh', full: 'British Standards Institution' },
                 ].map(s => (
                   <div key={s.code} className="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-brand-red transition-colors">
                     <div className="text-xl font-bold text-brand-red mb-1">{s.code}</div>

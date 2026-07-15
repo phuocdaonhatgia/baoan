@@ -31,12 +31,12 @@ const strengths = [
 ]
 
 const companyPhotos = [
-  { img: '/images/gioithieu/bien-phap-thi-cong.jpg', cap: 'Biện pháp thi công thực tế' },
-  { img: '/images/gioithieu/hoi-nghi-nist.jpg',      cap: 'Hội nghị tiêu chuẩn NIST' },
-  { img: '/images/gioithieu/hoi-nghi-ul-nfpa.jpg',   cap: 'Hội nghị tiêu chuẩn UL-NFPA' },
-  { img: '/images/gioithieu/banner-lon.jpg',          cap: 'Mũ bảo hộ Bảo An Engineering' },
+  { img: '/images/tieu-chuan/test2.jpg', cap: 'Vận hành thử hệ thống' },
+  { img: '/images/gioithieu/thucte.jpg',      cap: 'Chế tạo đường ống' },
+  { img: '/images/gioithieu/hop.jpg',   cap: 'Hội nghị an toàn lao động' },
+  { img: '/images/gioithieu/congty.jpg',          cap: 'Lắp đặt thi công' },
   { img: '/images/gioithieu/banner-truong.jpg',       cap: 'Trụ sở Bảo An Đồng Nai' },
-  { img: '/images/gioithieu/sp-cong-trinh-1.jpg',    cap: 'Sản phẩm là công trình (1)' },
+  { img: '/images/gioithieu/training.jpg',    cap: 'Huấn luyện nhân viên' },
   { img: '/images/gioithieu/sp-cong-trinh-2.jpg',    cap: 'Sản phẩm là công trình (2)' },
 ]
 
@@ -59,7 +59,7 @@ export default function GioiThieuPage() {
           <Image src="/images/gioi-thieu/baoan.png" alt="Bảo An Engineering" fill className="object-cover opacity-25" />
           <div className="relative z-10 container-main grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-3xl font-bold mb-4">Công ty TNHH Bảo An Engineering</h1>
+              <h1 className="text-3xl font-bold mb-4">Công ty TNHH Bảo An</h1>
               <p className="text-gray-300 leading-relaxed mb-4">
                 Thành lập từ tháng 6 năm 1999 tại Khu công nghiệp Bình Sơn, Long Thành, Đồng Nai.
                 Bảo An Engineering chuyên tư vấn thiết kế, cung cấp và lắp đặt hệ thống phòng cháy
@@ -122,8 +122,10 @@ export default function GioiThieuPage() {
             <p className="text-brand-gray-mid mb-6">Văn phòng, showroom và đội ngũ Bảo An Engineering</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {companyPhotos.map((p, i) => (
-                <div key={i} className="relative rounded-xl overflow-hidden group bg-gray-100"
-                  style={{ height: i === 0 || i === 4 ? '220px' : '160px' }}>
+<div
+  key={i}
+  className="relative h-52 rounded-xl overflow-hidden group bg-gray-100"
+>
                   <Image src={p.img} alt={p.cap} fill className="object-cover group-hover:scale-105 transition-transform duration-400" />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300">

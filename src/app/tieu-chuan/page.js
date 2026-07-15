@@ -13,7 +13,7 @@ const standards = [
     code: 'NFPA', country: 'Hoa Kỳ',
     fullName: 'National Fire Protection Association',
     desc: 'Bộ tiêu chuẩn PCCC được áp dụng rộng rãi nhất thế giới, đặc biệt phổ biến tại các dự án có vốn đầu tư nước ngoài tại Việt Nam như Intel, Colgate, Big C.',
-    img: '/images/tieuchuan2/tc-hoat-dong-cong-truong.jpg',
+    img: '/images/tieuchuan2/nfpa3.jpg',
     codes: [
       { code: 'NFPA 13', name: 'Lắp đặt hệ thống Sprinkler' },
       { code: 'NFPA 14', name: 'Hệ thống Standpipe và Hosereel' },
@@ -27,7 +27,7 @@ const standards = [
     code: 'APSAD', country: 'Pháp',
     fullName: 'Assemblée Plénière des Sociétés Assurances Dommages',
     desc: 'Tiêu chuẩn bảo hiểm của Pháp, được áp dụng tại các dự án liên quan đến nhà bảo hiểm châu Âu. Metro Cash & Carry, Novotel và nhiều tập đoàn Pháp tại Việt Nam yêu cầu tiêu chuẩn này.',
-    img: '/images/tieuchuan2/tc-giai-phap.jpg',
+    img: '/images/tieuchuan2/apsad.png',
     codes: [
       { code: 'APSAD R1', name: 'Chữa cháy tự động bằng nước — Sprinkler' },
       { code: 'APSAD R5', name: 'Hệ thống chữa cháy CO2' },
@@ -39,25 +39,13 @@ const standards = [
     code: 'TCVN', country: 'Việt Nam',
     fullName: 'Tiêu chuẩn Quốc gia Việt Nam',
     desc: 'Tiêu chuẩn bắt buộc áp dụng cho mọi công trình tại Việt Nam theo quy định của Bộ Công an và Bộ Xây dựng. Bảo An Engineering đảm bảo tuân thủ đầy đủ hệ thống TCVN hiện hành.',
-    img: '/images/tieu-chuan/tcvn.jpg',
+    img: '/images/tieuchuan2/tcvn.png',
     codes: [
       { code: 'TCVN 3890:2009', name: 'Phương tiện PCCC cho nhà và công trình' },
       { code: 'TCVN 7336:2003', name: 'Hệ thống Sprinkler tự động' },
       { code: 'TCVN 5738:2001', name: 'Hệ thống báo cháy tự động' },
       { code: 'TCVN 7161:2009', name: 'Hệ thống chữa cháy khí' },
       { code: 'TCVN 9385:2012', name: 'Chống sét cho công trình xây dựng' },
-    ],
-  },
-  {
-    code: 'BS', country: 'Anh',
-    fullName: 'British Standards Institution',
-    desc: 'Tiêu chuẩn Anh quốc được áp dụng tại các dự án có đối tác hoặc nhà bảo hiểm từ Anh và các nước Commonwealth. Thường gặp trong các dự án bất động sản thương mại cao cấp.',
-    img: '/images/tieuchuan2/tc-lap-dat.jpg',
-    codes: [
-      { code: 'BS EN 12845', name: 'Hệ thống Sprinkler cố định' },
-      { code: 'BS 5041', name: 'Hosereel và thiết bị nước chữa cháy' },
-      { code: 'BS 5839', name: 'Hệ thống báo cháy và cứu hỏa' },
-      { code: 'BS 7671', name: 'Yêu cầu lắp đặt điện' },
     ],
   },
 ]
@@ -72,14 +60,14 @@ const certifications = [
 
 // Gallery ảnh thực tế thi công của Bảo An
 const gallery = [
-  { img: '/images/tieuchuan2/tc-giai-phap.jpg',          caption: 'Giải pháp kỹ thuật PCCC' },
-  { img: '/images/dichvu/congnghe.png', caption: 'Công nghệ mới, hiện đại' },
-  { img: '/images/tieuchuan2/tc-he-thong.jpg',            caption: 'Hệ thống showroom thiết bị' },
-  { img: '/images/tieuchuan2/tc-lap-dat.jpg',             caption: 'Bảo quản vận chuyển đến công trường' },
-  { img: '/images/tieuchuan2/tc-sp-cong-trinh.jpg',       caption: 'Sản phẩm lắp đặt tại công trình' },
-  { img: '/images/dichvu/ky niem 10 nam.jpg',         caption: 'Kỷ niệm 10 năm Big C' },
+  { img: '/images/gioithieu/serve.jpg',          caption: 'Hệ thống server IT' },
+  { img: '/images/tieu-chuan/test.jpg', caption: 'Kiểm tra chạy thử hệ thống' },
+  { img: '/images/tieuchuan2/foam.jpg',            caption: 'Hệ thống foam' },
+  { img: '/images/tieuchuan2/chetaoduongong.jpg',             caption: 'Chế tạo đường ống' },
+  { img: '/images/tieu-chuan/xenang.jpg',       caption: 'Lắp đặt đường ống' },
+  { img: '/images/tieuchuan2/vanhanh.jpg',         caption: 'Vận hành nghiệm thu' },
   { img: '/images/dichvu/vanchuyen.png',         caption: 'Bảo quản vận chuyển an toàn' },
-  { img: '/images/dichvu/tu-van-thiet-ke.jpg',            caption: 'Tư vấn thiết kế hệ thống' },
+  { img: '/images/tieu-chuan/thietbitong.jpg',            caption: 'Thiết bị chất lượng' },
 ]
 
 export default function TieuChuanPage() {

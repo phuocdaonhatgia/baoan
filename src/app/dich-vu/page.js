@@ -27,14 +27,14 @@ const services = [
     title: 'Cung cấp thiết bị',
     desc: 'Bảo An là nhà phân phối chính hãng các thương hiệu PCCC hàng đầu thế giới. Toàn bộ thiết bị đều có đầy đủ chứng nhận UL, FM, VdS, CE và chứng nhận Cục CSPCCC Bộ Công an Việt Nam.',
     items: [
-      'Đầu phun Sprinkler — Tyco, Viking',
+      'Đầu phun Sprinkler',
       'Tủ & cuộn vòi Hosereel — Bảo An Engineering',
       'Bơm chữa cháy — Salmson, Penta',
       'Hệ thống báo cháy — Ampac, Siemens',
       'Khí chữa cháy FM200 — Kidde, Siemens',
       'Bình chữa cháy CO2, ABC — chứng nhận Bộ CA',
     ],
-    img: '/images/dichvu/cung-cap-thiet-bi.jpg',
+    img: '/images/dichvu/thietbi.jpg',
   },
   {
     num: '03',
@@ -47,7 +47,7 @@ const services = [
       'Bàn giao hồ sơ hoàn công đầy đủ',
       'Hỗ trợ nghiệm thu với cơ quan PCCC địa phương',
     ],
-    img: '/images/dichvu/hoat-dong-thi-cong.jpg',
+    img: '/images/dichvu/dichvulapdat.jpg',
   },
   {
     num: '04',
@@ -60,7 +60,7 @@ const services = [
       'Thay thế linh kiện hao mòn',
       'Báo cáo tình trạng hệ thống sau mỗi lần bảo trì',
     ],
-    img: '/images/dichvu/bien-phap-thi-cong.jpg',
+    img: '/images/dichvu/baotri.jpg',
   },
 ]
 
