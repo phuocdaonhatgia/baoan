@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
             <div className="border-t border-gray-700 pt-4 mt-4">
               <p className="text-xs text-gray-500 mb-1">Nhà phân phối</p>
-              <p className="text-sm text-gray-300">Tyco · Viking · Salmson · Ansul · Siemens</p>
+              <p className="text-sm text-gray-300">Tyco · Hochiki · Salmson · Ansul · Seah</p>
             </div>
           </div>
           <div>

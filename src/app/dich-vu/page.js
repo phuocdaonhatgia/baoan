@@ -20,7 +20,7 @@ const services = [
       'Tư vấn lựa chọn tiêu chuẩn phù hợp (NFPA / APSAD / TCVN)',
       'Hỗ trợ thủ tục cấp phép PCCC với cơ quan chức năng',
     ],
-    img: '/images/dichvu/tu-van-thiet-ke.jpg',
+    img: '/images/tieuchuan2/tuvan.jpg',
   },
   {
     num: '02',

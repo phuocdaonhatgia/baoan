@@ -12,7 +12,7 @@ const milestones = [
   { year: '1999', event: 'Thành lập Công ty TNHH Bảo An tại Khu công nghiệp Bình Sơn, Long Thành, Đồng Nai' },
   { year: '2001', event: 'Hoàn thành dự án đầu tiên — hệ thống PCCC cho các nhà máy tại Đồng Nai' },
   { year: '2005', event: 'Mở chi nhánh TP. Hồ Chí Minh, bắt đầu hợp tác với Metro Cash & Carry' },
-  { year: '2007', event: 'Trở thành nhà phân phối chính hãng Tyco và Viking' },
+  { year: '2007', event: 'Được các nhà cung cấp các thiết bị chính hãng' },
   { year: '2010', event: 'Hoàn thành chuỗi dự án Big C (Go! Việt Nam) trên toàn quốc' },
   { year: '2013', event: 'Ký hợp đồng với Intel Vietnam và Colgate Palmolive Bình Dương' },
   { year: '2015', event: 'Mở chi nhánh Hà Nội, phủ sóng 3 miền Bắc — Trung — Nam' },
@@ -24,20 +24,21 @@ const milestones = [
 const strengths = [
   { num: '01', title: 'Kinh nghiệm 25 năm', desc: 'Thi công PCCC cho nhà máy, siêu thị, khách sạn, khu công nghiệp — tích lũy kinh nghiệm xử lý mọi tình huống kỹ thuật phức tạp.' },
   { num: '02', title: 'Xưởng chế tạo riêng', desc: 'Xưởng chế tạo tại Đồng Nai kiểm soát chất lượng đầu vào, đảm bảo tiến độ thi công và giảm chi phí trung gian.' },
-  { num: '03', title: 'Thiết bị chính hãng', desc: 'Nhà phân phối ủy quyền: Tyco, Viking, Salmson, Ansul, Ampac, Siemens — đầy đủ chứng nhận UL, FM, VdS, TCVN.' },
-  { num: '04', title: 'Đa tiêu chuẩn', desc: 'Thiết kế và thi công theo NFPA (Mỹ), APSAD (Pháp), TCVN, BS (Anh) — đáp ứng mọi yêu cầu bảo hiểm.' },
+  { num: '03', title: 'Thiết bị chính hãng', desc: 'Nhà phân phối ủy quyền: Tyco, Hochiki, Salmson, Ansul, Seah — đầy đủ chứng nhận UL, FM, VdS, TCVN.' },
+  { num: '04', title: 'Đa tiêu chuẩn', desc: 'Thiết kế và thi công theo NFPA (Mỹ), APSAD (Pháp), TCVN,— đáp ứng mọi yêu cầu bảo hiểm.' },
   { num: '05', title: 'Hỗ trợ pháp lý', desc: 'Hỗ trợ thủ tục thẩm duyệt thiết kế PCCC và nghiệm thu với Cục CSPCCC Bộ Công an.' },
   { num: '06', title: 'Bảo trì dài hạn', desc: 'Hợp đồng bảo trì định kỳ, hỗ trợ khẩn cấp 24/7 cho khách hàng có hợp đồng bảo trì.' },
 ]
 
 const companyPhotos = [
-  { img: '/images/tieu-chuan/test2.jpg', cap: 'Vận hành thử hệ thống' },
-  { img: '/images/gioithieu/thucte.jpg',      cap: 'Chế tạo đường ống' },
+  { img: '/images/tieuchuan2/kythuat.jpg', cap: 'Họp kỹ thuật' },
+  { img: '/images/tieuchuan2/sprink.jpg',      cap: 'Kiểm tra trụ chữa cháy' },
   { img: '/images/gioithieu/hop.jpg',   cap: 'Hội nghị an toàn lao động' },
   { img: '/images/gioithieu/congty.jpg',          cap: 'Lắp đặt thi công' },
   { img: '/images/gioithieu/banner-truong.jpg',       cap: 'Trụ sở Bảo An Đồng Nai' },
   { img: '/images/gioithieu/training.jpg',    cap: 'Huấn luyện nhân viên' },
   { img: '/images/tieuchuan2/baotri.jpg',    cap: 'Bảo trì định kỳ' },
+    { img: '/images/gioithieu/baotri.jpg',    cap: 'Thi công hệ thống' },
 ]
 
 export default function GioiThieuPage() {
@@ -88,8 +89,8 @@ export default function GioiThieuPage() {
           {/* Tầm nhìn + Sứ mệnh + Giá trị */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Tầm nhìn', color: 'border-brand-red', content: 'Nhằm hướng đến là một trong những nhà thầu PCCC hàng đầu về chất lượng tiêu chuẩn kỹ thuật và dịch vụ với giá cả hợp lý nhất đến Quý khách hàng.' },
-              { title: 'Sứ mệnh', color: 'border-blue-500', content: 'Cung cấp giải pháp PCCC đúng tiêu chuẩn, đúng kỹ thuật với thiết bị chính hãng từ Tyco, Viking, Ansul, Ampac, Siemens — đảm bảo an toàn tuyệt đối cho mọi công trình.' },
+              { title: 'Tầm nhìn', color: 'border-red-500', content: 'Nhằm hướng đến là một trong những nhà thầu PCCC hàng đầu về chất lượng tiêu chuẩn kỹ thuật và dịch vụ với giá cả hợp lý nhất đến Quý khách hàng.' },
+              { title: 'Sứ mệnh', color: 'border-yellow-500', content: 'Cung cấp giải pháp PCCC đúng tiêu chuẩn, đúng kỹ thuật với thiết bị chính hãng từ Tyco, Viking, Ansul, Ampac, Siemens — đảm bảo an toàn tuyệt đối cho mọi công trình.' },
               { title: 'Giá trị cốt lõi', color: 'border-green-500', content: 'Trung thực, tôn trọng và hợp tác. Cam kết tiêu chuẩn chất lượng. Sáng tạo, đổi mới và hiệu quả trong việc gia tăng giá trị của khách hàng và đối tác.' },
             ].map(item => (
               <div key={item.title} className={`bg-white rounded-xl border-l-4 ${item.color} border border-gray-100 p-6`}>
