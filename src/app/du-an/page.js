@@ -17,26 +17,24 @@ const projectGroups = [
       { name: 'Big C (tổng hợp)', detail: '24 siêu thị trên toàn quốc', systems: ['Sprinkler', 'Báo cháy tự động', 'Hosereel'], img: '/images/duan2/bigc-tong.jpg' },
       { name: 'MM Mega Market / Metro An Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/duan2/metro-an-phu.jpg' },
       { name: 'MM Mega Market / Metro Hiệp Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/duan2/metro-hiep-phu.jpg' },
-      { name: 'Siêu thị Nhật Nam', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Báo cháy tự động'], img: '/images/duan2/nhatnam.jpg' }
     ],
   },
   {
     group: 'Nhà máy & Khu công nghiệp',
     projects: [
-      { name: 'Nhà máy Colgate Palmolive', detail: 'Bình Dương', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Họng nước'], img: '/images/duan2/colgate.webp'},
+      { name: 'Nhà máy Colgate Palmolive', detail: 'Bình Dương', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Họng nước'], img: '/images/duan2/colgate.jpg' },
       { name: 'VSIP Bình Dương Industrial Zone', detail: 'Bình Dương', systems: ['Báo cháy tự động', 'Chữa cháy vách tường', 'Họng nước'], img: '/images/duan2/khu-cong-nghiep.jpg' },
       { name: 'Bayer Agritech Sài Gòn', detail: 'Bình Dương', systems: ['Sprinkler', 'Báo cháy', 'Hosereel'], img: '/images/duan2/bayer-agritech.jpg' },
       { name: 'Shell Gò Dầu (TOP Solvent)', detail: 'Tây Ninh', systems: ['Chữa cháy Foam', 'Báo cháy tự động', 'Hosereel'], img: '/images/duan2/shell-go-dau.jpg' },
-      { name: 'Nhà máy Dược Sanofi ', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler'], img: '/images/duan2/sanofi.jpg' },
+      { name: 'Nhà máy (tổng hợp)', detail: 'Đồng Nai & Bình Dương', systems: ['Sprinkler', 'Báo cháy địa chỉ', 'Hosereel'], img: '/images/duan2/nha-may.jpg' },
     ],
   },
   {
-    group: 'Khách sạn & Cơ quan',
+    group: 'Khách sạn & Cao tầng',
     projects: [
       { name: 'Khách sạn Majestic', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy địa chỉ', 'Hosereel'], img: '/images/duan2/khach-san.jpg' },
-      { name: 'Trụ sở UBND TPHCM', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy tự động'], img: '/images/duan2/trung-tam.jpg' },
-      { name: 'Khách sạn Bình Minh – Phan Thiết', detail: 'TP. Hồ Chí Minh', systems: ['Tổng đài điện thoại', 'Báo cháy tự động'], img: '/images/duan2/binhminphanthiet.jpg' },
-      { name: 'Trụ sở UBND tỉnh Đồng Nai', detail: 'Toàn quốc', systems: ['Sprinkler', 'Báo cháy tự động', 'Camera quan sát'], img: '/images/duan2/UBND-tinh-Dong-Nai.webp' },
+      { name: 'Trung tâm thương mại', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy tự động'], img: '/images/duan2/trung-tam.jpg' },
+      { name: 'Dự án khác', detail: 'Toàn quốc', systems: ['Sprinkler', 'Báo cháy', 'Camera'], img: '/images/duan2/du-an-khac.jpg' },
     ],
   },
 ]
@@ -103,7 +101,7 @@ export default function DuAnPage() {
 
         {/* Hero banner - chỉ text, không có gallery ảnh bên dưới */}
         <div className="relative bg-brand-gray text-white py-12 overflow-hidden">
-          <Image src="/images/duan2/banner-du-an.jpg" alt="Dự án PCCC Bảo An" fill className="object-cover opacity-25" />
+          <Image src="/images/gioithieutrangchu/mm.png" alt="Dự án PCCC Bảo An" fill className="object-cover opacity-25" />
           <div className="relative z-10 container-main">
             <h1 className="text-2xl font-bold mb-2">Dự án tiêu biểu</h1>
             <p className="text-gray-400 text-sm max-w-2xl">
