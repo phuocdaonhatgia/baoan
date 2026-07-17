@@ -11,38 +11,51 @@ export const metadata = {
 const projectGroups = [
   {
     group: 'Siêu thị & Trung tâm phân phối',
+    href: '/du-an/sieu-thi-tttm',
     projects: [
-      { name: 'GO! Thăng Long', detail: 'Hà Nội', systems: ['Sprinkler tự động', 'Báo cháy tự động', 'Hosereel'], img: '/images/projects/go thang long.jpg' },
-      { name: 'GO! An Lạc', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Chữa cháy vách tường', 'Báo cháy'], img: '/images/projects/go an lac.png' },
-      { name: 'GO! Cần Thơ', detail: 'Cần Thơ', systems: ['Sprinkler', 'Báo cháy tự động', 'Hệ thống màn cuốn tự động ngăn khoan cháy'], img: '/images/projects/go can tho.jpg' },
-      { name: 'MM Mega Market An Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/projects/mm an phu.jpg' },
-      { name: 'MM Mega Market  Hiệp Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/projects/mm hiep phuu.jpg' },
-      { name: 'MM Mega Market Bình Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Chữa cháy vách tường ', 'Hệ thống đèn chiếu sáng sự cố và thoát hiểm'], img: '/images/projects/mm binh phu.png' },
+      { slug: 'bigc-thang-long', name: 'Big C Thăng Long (GO! Thăng Long)', detail: 'Hà Nội', systems: ['Sprinkler tự động', 'Báo cháy tự động', 'Hosereel'], img: '/images/projects/biggg.jpg' },
+      { slug: 'bigc-an-lac', name: 'Big C An Lạc (GO! An Lạc)', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Chữa cháy vách tường', 'Báo cháy'], img: '/images/projects/canlac.jpg' },
+      { slug: 'bigc-can-tho', name: 'Big C Cần Thơ (GO! Cần Thơ)', detail: 'Cần Thơ', systems: ['Sprinkler', 'Báo cháy tự động', 'Hệ thống màn cuốn tự động ngăn khói cháy'], img: '/images/projects/go can tho.jpg' },
+      { slug: 'mm-mega-market-an-phu', name: 'MM Mega Market An Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/projects/mm an phu.jpg' },
+      { slug: 'mm-mega-market-hiep-phu', name: 'MM Mega Market Hiệp Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Hosereel & Hydrant', 'Họng nước cứu hỏa'], img: '/images/projects/mm hiep phuu.jpg' },
+      { slug: 'mm-mega-market-binh-phu', name: 'MM Mega Market Bình Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Đèn chiếu sáng sự cố và thoát hiểm'], img: '/images/projects/mm binh phu.png' },
     ],
   },
   {
     group: 'Nhà máy & Khu công nghiệp',
+    href: '/du-an/nha-may-khu-cn',
     projects: [
-      { name: 'Nhà máy Roberth Bosch', detail: 'Đồng Nai', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Bình chữa cháy xách tay'], img: '/images/projects/bosch.png' },
-      { name: 'Nhà máy Tata Coffee', detail: 'Bình Dương', systems: ['Sprinkler tự động', 'Chữa cháy vách tường'], img: '/images/projects/tata.png' },
-      { name: 'Nhà máy mới Tombow', detail: 'Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy', 'Hosereel'], img: '/images/projects/tombow.jpg' },
-      { name: 'Shell Gò Dầu (TOP Solvent)', detail: 'Đồng Nai', systems: ['Chữa cháy tự động', 'Chữa cháy vách tường', 'Họng nước cứu hỏa'], img: '/images/projects/shell.webp' },
-      { name: 'Nhà máy Chế Biến Hạt Điều - Intersnack', detail: 'Đồng Nai', systems: ['Sprinkler', 'Chữa cháy vách tường trong và ngoài nhà', 'Bình chữa cháy xách tay'], img: '/images/projects/intersnack.jpg' },
-    { name: 'FrieslandCampina Việt Nam', detail: 'Bình Dương', systems: ['Hệ thống Sprinkler'], img: '/images/projects/friesland.webp' }
+      { slug: 'robert-bosch', name: 'Nhà máy Robert Bosch', detail: 'Đồng Nai', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Bình chữa cháy xách tay'], img: '/images/projects/bosch.png' },
+      { slug: 'tata-coffee', name: 'Nhà máy Tata Coffee', detail: 'Bình Dương', systems: ['Sprinkler tự động', 'Chữa cháy vách tường'], img: '/images/projects/tata.png' },
+      { slug: 'tombow', name: 'Nhà máy mới Tombow', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Báo cháy', 'Hosereel'], img: '/images/projects/tombow.jpg' },
+      { slug: 'shell-go-dau', name: 'Shell Gò Dầu (TOP Solvent)', detail: 'Đồng Nai', systems: ['Chữa cháy tự động', 'Chữa cháy vách tường', 'Họng nước cứu hỏa'], img: '/images/projects/shell.webp' },
+      { slug: 'intersnack', name: 'Nhà máy Chế Biến Hạt Điều - Intersnack', detail: 'Đồng Nai', systems: ['Sprinkler', 'Chữa cháy vách tường trong và ngoài nhà', 'Bình chữa cháy xách tay'], img: '/images/projects/intersnack.jpg' },
+      { slug: 'frieslandcampina', name: 'FrieslandCampina Việt Nam', detail: 'Bình Dương', systems: ['Hệ thống Sprinkler'], img: '/images/projects/friesland.webp' },
     ],
   },
   {
     group: 'Khách sạn & Cao tầng',
+    href: '/du-an/khach-san',
     projects: [
-      { name: 'Khách sạn Majestic', detail: 'TP. Hồ Chí Minh', systems: ['Chữa cháy tự động', 'Chữa cháy vách tường', 'Họng nước cứu hỏa','Hệ thống báo cháy'], img: '/images/projects/majestic.webp' },
-      { name: 'Khách sạn Novotel Đà Nẵng', detail: 'Đà Nẵng', systems: ['Hệ thống chữa cháy tự động khí CO2', 'Hệ thống chữa cháy khí FM200 cho phòng Server'], img: '/images/projects/novotel1.jpg' },
-      { name: 'Khu nhà ở cao tầng và khu phức hợp thương mại Hưng Ngân', detail: 'Hồ Chí Minh', systems: ['Hệ thống phòng cháy chữa cháy và chống sét Block B1'], img: '/images/projects/saroma.jpg' },
-      { name: 'Biệt thự Saroma Villa khu đô thị Sala Thủ Thiêm', detail: 'Hồ Chí Minh', systems: ['Sprinkler','Chữa cháy vách tường'], img: '/images/projects/hung ngan.jpg' },
+      { slug: 'majestic-hotel', name: 'Khách sạn Majestic', detail: 'TP. Hồ Chí Minh', systems: ['Chữa cháy tự động', 'Chữa cháy vách tường', 'Họng nước cứu hỏa', 'Hệ thống báo cháy'], img: '/images/projects/majestic.webp' },
+      { slug: 'novotel-da-nang', name: 'Khách sạn Novotel Đà Nẵng', detail: 'Đà Nẵng', systems: ['Hệ thống chữa cháy tự động khí CO2', 'Hệ thống chữa cháy khí FM200 cho phòng Server'], img: '/images/projects/novotel1.jpg' },
+      { slug: 'hung-ngan', name: 'Khu nhà ở cao tầng Hưng Ngân', detail: 'TP. Hồ Chí Minh', systems: ['Hệ thống PCCC và chống sét Block B1'], img: '/images/projects/hung ngan.jpg' },
+      { slug: 'saroma-villa', name: 'Biệt thự Saroma Villa - Sala Thủ Thiêm', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler', 'Chữa cháy vách tường'], img: '/images/projects/saroma.jpg' },
+      { slug: 'imperial-vung-tau', name: 'The Imperial Residences', detail: 'Vũng Tàu', systems: ['Sprinkler', 'Chữa cháy vách tường', 'Báo cháy tự động'], img: '/images/projects/imperiall.jpg' },
+      { slug: 'riviera-point', name: 'Residential Area Riviera Point', detail: 'TP. Hồ Chí Minh', systems: ['Thiết kế PCCC', 'Hệ thống chống sét'], img: '/images/projects/river.jpeg' },
+    ],
+  },
+  {
+    group: 'Công trình công cộng',
+    href: '/du-an/cong-trinh-cong-cong',
+    projects: [
+      { slug: 'ubnd-hcm', name: 'Trụ sở UBND Thành phố Hồ Chí Minh', detail: 'TP. Hồ Chí Minh', systems: ['Camera quan sát', 'Báo cháy tự động'], img: '/images/projects/ubnd.webp' },
+      { slug: 'ubnd-dong-nai', name: 'Trụ sở UBND Tỉnh Đồng Nai', detail: 'Đồng Nai', systems: ['Camera quan sát', 'Hệ thống chống sét', 'Báo cháy tự động'], img: '/images/projects/dong nai.jpeg' },
+      { slug: 'thu-vien-dong-nai', name: 'Thư Viện Tỉnh Đồng Nai', detail: 'Đồng Nai', systems: ['Hệ thống báo cháy', 'Hệ thống chống sét'], img: '/images/projects/thuvien.jpg' },
     ],
   },
 ]
 
-// Dự án tham khảo từ bảng (đọc từ ảnh C và d)
 const refProjects = [
   { stt: 1,  name: 'Intel Việt Nam', systems: 'Hệ thống chữa cháy tự động', year: '2008' },
   { stt: 2,  name: 'Colgate Palmolive Đà Nẵng', systems: 'Hệ thống chữa cháy tự động', year: '2008' },
@@ -53,7 +66,7 @@ const refProjects = [
   { stt: 7,  name: 'Metro Thăng Long', systems: 'Hệ thống chữa cháy ngoài trời · Hosereel · Báo cháy', year: '2006' },
   { stt: 8,  name: 'Big C Hải Phòng', systems: 'Hệ thống chữa cháy tự động', year: '2006' },
   { stt: 9,  name: 'Big C Hoàng Văn Thụ', systems: 'Hệ thống chữa cháy tự động', year: '2005' },
-  { stt: 10, name: 'XN Xây Lắp & Cơ Khí Xây dựng', systems: 'Hệ thống chữa cháy tự động', year: '2005' },
+  { stt: 10, name: 'XN Xây Lắp & Cơ Khí Xây dựng', systems: 'Hệ thống chữa cháy', year: '2005' },
   { stt: 11, name: 'Metro Đà Nẵng', systems: 'Hệ thống chữa cháy tự động · Hosereel · Vách tường', year: '2005' },
   { stt: 12, name: 'Metro Hải Phòng', systems: 'Hệ thống chữa cháy tự động', year: '2005' },
   { stt: 13, name: 'Thư viện Tỉnh Đồng Nai', systems: 'Hệ thống chữa cháy tự động · Báo cháy', year: '2004' },
@@ -102,9 +115,9 @@ export default function DuAnPage() {
           </div>
         </div>
 
-        {/* Hero banner - chỉ text, không có gallery ảnh bên dưới */}
+        {/* Hero */}
         <div className="relative bg-brand-gray text-white py-12 overflow-hidden">
-          <Image src="/images/gioithieutrangchu/mega.jpg" alt="Dự án PCCC Bảo An" fill className="object-cover opacity-25" />
+          <Image src="/images/tieuchuan2/tc-sp-cong-trinh.jpg" alt="Dự án PCCC Bảo An" fill className="object-cover opacity-25" />
           <div className="relative z-10 container-main">
             <h1 className="text-2xl font-bold mb-2">Dự án tiêu biểu</h1>
             <p className="text-gray-400 text-sm max-w-2xl">
@@ -133,25 +146,41 @@ export default function DuAnPage() {
           {/* Dự án tiêu biểu theo nhóm */}
           {projectGroups.map(group => (
             <div key={group.group}>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-1 h-7 bg-brand-red rounded-full" />
-                <h2 className="text-xl font-bold text-brand-gray">{group.group}</h2>
-                <span className="text-xs bg-brand-red-light text-brand-red px-2 py-0.5 rounded-full">
-                  {group.projects.length} công trình
-                </span>
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-1 h-7 bg-brand-red rounded-full" />
+                  <h2 className="text-xl font-bold text-brand-gray">{group.group}</h2>
+                  <span className="text-xs bg-brand-red-light text-brand-red px-2 py-0.5 rounded-full">
+                    {group.projects.length} công trình
+                  </span>
+                </div>
+                <Link href={group.href}
+                  className="text-xs text-brand-red hover:underline hidden sm:flex items-center gap-1">
+                  Xem tất cả
+                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {group.projects.map(p => (
-                  <div key={p.name} className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-brand-red transition-all duration-300 group">
+                  <Link key={p.slug} href={`/du-an/${p.slug}`}
+                    className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-brand-red transition-all duration-300 group block">
                     <div className="relative h-44 bg-gray-100 overflow-hidden">
-                      <Image src={p.img} alt={p.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <Image src={p.img} alt={p.name} fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                       <div className="absolute bottom-3 left-3 right-3">
                         <p className="text-xs text-gray-300">{p.detail}</p>
                       </div>
+                      <div className="absolute top-3 right-3 bg-white/90 text-brand-red text-xs px-2 py-1 rounded-full font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                        Xem chi tiết
+                      </div>
                     </div>
                     <div className="p-4">
-                      <h3 className="font-bold text-brand-gray mb-2 group-hover:text-brand-red transition-colors text-sm leading-snug">{p.name}</h3>
+                      <h3 className="font-bold text-brand-gray mb-2 group-hover:text-brand-red transition-colors text-sm leading-snug">
+                        {p.name}
+                      </h3>
                       <div className="space-y-1">
                         {p.systems.map(sys => (
                           <div key={sys} className="flex items-center gap-2">
@@ -161,7 +190,7 @@ export default function DuAnPage() {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
