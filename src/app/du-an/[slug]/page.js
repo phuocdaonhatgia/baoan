@@ -16,7 +16,7 @@ const allProjects = [
     location: 'Hà Nội',
     year: '2004',
     systems: ['Hệ thống chữa cháy tự động Sprinkler', 'Hệ thống chữa cháy ngoài trời', 'Hệ thống chữa cháy vách tường Hosereel'],
-    images: ['/images/projects/big c thang long.jpg', '/images/projects/big c.jpg', '/images/projects/big c thang long.jpg',],
+    images: ['/images/projects/big c thang long.jpg', '/images/projects/big c thang long.jpg', '/images/projects/big c thang long.jpg'],
   },
   {
     slug: 'bigc-an-lac',
@@ -270,32 +270,34 @@ function ImageGallery({ images, name }) {
             </svg>
           </button>
 
-<div className="flex gap-2 overflow-hidden">
-  {images.slice(thumbStart, thumbStart + THUMB_SHOW).map((img, idx) => {
-    const realIdx = thumbStart + idx;
-    const isActive = realIdx === active;
+          {/* Thumbnails */}
+          <div className="flex gap-2 flex-1 overflow-hidden">
+            {images.slice(thumbStart, thumbStart + THUMB_SHOW).map((img, idx) => {
+              const realIdx = thumbStart + idx
+              const isActive = realIdx === active
+              // Ảnh cuối mờ nếu còn ảnh phía sau
+              const isDimmed = idx === THUMB_SHOW - 1 && thumbStart + THUMB_SHOW < total
 
-    return (
-      <button
-        key={realIdx}
-        onClick={() => goMain(realIdx)}
-        className={`relative w-44 flex-shrink-0 rounded-lg overflow-hidden ${
-          isActive
-            ? 'ring-2 ring-brand-red'
-            : 'ring-1 ring-gray-200'
-        }`}
-        style={{ aspectRatio: '4 / 3' }}
-      >
-        <Image
-          src={img}
-          alt={`Thumbnail ${realIdx + 1}`}
-          fill
-          className="object-cover"
-        />
-      </button>
-    );
-  })}
-</div>
+              return (
+                <button
+                  key={realIdx}
+                  onClick={() => goMain(realIdx)}
+                  className={`relative flex-1 rounded-lg overflow-hidden transition-all duration-200 ${
+                    isActive ? 'ring-2 ring-brand-red ring-offset-1' : 'ring-1 ring-gray-200 hover:ring-brand-red'
+                  }`}
+                  style={{ paddingBottom: '70%' }}
+                >
+                  <Image src={img} alt={`Thumbnail ${realIdx + 1}`} fill className="object-cover" />
+                  {/* Lớp mờ cho ảnh cuối khi còn ảnh phía sau */}
+                  {isDimmed && (
+                    <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                      <span className="text-white text-xs font-bold">+{total - thumbStart - THUMB_SHOW}</span>
+                    </div>
+                  )}
+                </button>
+              )
+            })}
+          </div>
 
           {/* Nút phải */}
           <button
