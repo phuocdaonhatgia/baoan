@@ -6,6 +6,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 const bannerSlides = [
+    {
+    img: '/images/banner/slide-new-4.jpg',
+    tag: 'Bao An Engineering',
+    title: 'Công ty TNHH Bảo An',
+    desc: '25 năm kinh nghiệm, hơn 500 công trình hoàn thành, 3 chi nhánh tại Đồng Nai, TP.HCM và Hà Nội.',
+  },
   {
     img: '/images/banner/slide-new-1.jpg',
     tag: 'Xưởng chế tạo sản xuất',
@@ -15,20 +21,14 @@ const bannerSlides = [
   {
     img: '/images/banner/slide-new-2.jpg',
     tag: 'Bảo quản vận chuyển đến công trường',
-    title: 'Xưởng chế tạo riêng — Kiểm soát chất lượng từ đầu vào',
-    desc: 'Xưởng chế tạo tại Đồng Nai đảm bảo tiến độ thi công và giảm chi phí trung gian cho khách hàng.',
+  title: 'Chất lượng tạo nên uy tín',
+  desc: 'Lựa chọn vật tư kỹ lưỡng, quy trình thi công chuẩn hóa và giám sát chặt chẽ để mang đến công trình bền vững.'
   },
   {
     img: '/images/banner/slide-new-3.jpg',
     tag: 'Hoạt động trên công trường',
     title: 'Lắp đặt hệ thống PCCC đúng tiêu chuẩn quốc tế',
     desc: 'Áp dụng tiêu chuẩn NFPA (Mỹ), APSAD (Pháp), TCVN — nghiệm thu bàn giao hồ sơ hoàn công đầy đủ.',
-  },
-  {
-    img: '/images/banner/slide-new-4.jpg',
-    tag: 'Trụ sở Bảo An Engineering',
-    title: 'Công ty TNHH Bảo An',
-    desc: '25 năm kinh nghiệm, hơn 500 công trình hoàn thành, 3 chi nhánh tại Đồng Nai, TP.HCM và Hà Nội.',
   },
   {
     img: '/images/banner/slide-new-5.jpg',
@@ -144,7 +144,7 @@ function HeroBanner() {
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">{bannerSlides[current].desc}</p>
           <div className="flex flex-wrap gap-4 mb-12">
-            <Link href="/bao-gia" className="btn-primary px-8 py-3 text-base">Yêu cầu báo giá miễn phí</Link>
+            <Link href="/bao-gia" className="btn-primary px-8 py-3 text-base">Liên Hệ Tư Vấn</Link>
             <Link href="/du-an" className="px-8 py-3 text-base font-semibold text-white border-2 border-white/40 rounded-lg hover:border-white transition-colors">
               Xem dự án thực tế
             </Link>

@@ -59,7 +59,6 @@ content: <TuNghiemThuPCCC />,
   ],
     imageSource: 'Bộ Công An',
     img: '/images/tin-tuc/tintuc.webp',
-    gallery: ['/images/tin-tuc/bigc-cong-trinh.jpg'],
   },
   {
     id: 3,
@@ -70,6 +69,20 @@ content: <TuNghiemThuPCCC />,
     title: 'Chính thức bỏ 3 thủ tục nghiệm thu PCCC với công trình từ 1/7/2026',
     excerpt:
       'Nghị quyết 66.18/2026/NQ-CP bãi bỏ 3 thủ tục hành chính PCCC: kiểm tra công tác nghiệm thu; nghiệm thu đối với công trình đã được cấp giấy chứng nhận thẩm duyệt; và phục hồi hoạt động cơ sở. Chủ đầu tư được trao thêm quyền nhưng tăng trách nhiệm pháp lý — vi phạm có thể bị truy cứu hình sự.',
+        highlights: (
+    <ul className="list-disc space-y-3 pl-6">
+      <li>
+        <strong>Từ 01/07/2026</strong> chính thức bãi bỏ 03 thủ tục nghiệm thu
+        PCCC.
+      </li>
+      <li>
+        Chuyển từ <strong>tiền kiểm sang hậu kiểm</strong>.
+      </li>
+      <li>
+        Chủ đầu tư <strong>tự chịu trách nhiệm trước pháp luật</strong>.
+      </li>
+    </ul>
+  ),
     content: [<BoThuTuc/>],
     date: '22/06/2026',
     readTime: '4 phút',
@@ -87,8 +100,8 @@ content: <TuNghiemThuPCCC />,
       url: "https://thuvienphapluat.vn/phap-luat-doanh-nghiep/bai-viet/tu-01-7-2026-bo-thu-tuc-nghiem-thu-pccc-doi-voi-cong-trinh-da-duoc-tham-duyet-nhung-chua-duoc-chap-thuan-ket-qua-nghiem-thu-21413.html"
     }
   ],
-    img: '/images/tin-tuc/kcn-tan-tao.jpg',
-    gallery: ['/images/tin-tuc/kcn-tan-tao.jpg'],
+    img: '/images/tin-tuc/tintuc.webp',
+    imageSource: 'Bộ Công An',
   },
   {
     id: 4,

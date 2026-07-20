@@ -55,9 +55,17 @@ export default function BaiVietChiTietPage({ searchParams }) {
   <span>•</span>
   <span>{post.readTime} đọc</span>
 </div>
+{post.highlights && (
+  <div className="my-8 rounded-xl border border-red-200 bg-red-50 p-6">
+    <h3 className="mb-4 text-lg font-bold text-red-700">
+      📌 Điểm nổi bật
+    </h3>
 
+    {post.highlights}
+  </div>
+)}
 
-             <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100">
+<div className="relative mt-8 w-full h-64 md:h-96 rounded-xl overflow-hidden bg-gray-100">
   <Image
     src={post.img}
     alt={post.title}
