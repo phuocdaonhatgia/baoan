@@ -5,7 +5,8 @@
 // content: mảng các đoạn văn cho trang chi tiết — ĐÂY LÀ VĂN BẢN MẪU, tự thay bằng nội dung thật
 // gallery: mảng ảnh cho trang chi tiết — ĐÂY LÀ ẢNH MẪU, tự thay bằng ảnh thật
 // sourceUrl: nếu bài được tổng hợp lại từ báo khác, để link "xem bài gốc" ở cuối trang chi tiết
-
+import TuNghiemThuPCCC from "src/app/articles/TuNghiemThuPCCC.jsx";
+import BoThuTuc from "src/app/articles/BoThuTuc";
 export const posts = [
   {
     id: 1,
@@ -36,20 +37,28 @@ export const posts = [
     type: 'tin-tuc',
     cat: 'Pháp lý PCCC',
     catColor: 'bg-purple-50 text-purple-700',
-    title: 'Từ 1/7, chủ đầu tư tự nghiệm thu PCCC — Được hiểu là thế nào?',
+    title: 'Từ ngày 01/7/2026 bãi bỏ thủ tục nghiệm thu về PCCC',
     excerpt:
       'Từ ngày 1/7/2026, theo Nghị quyết 66.18/2026/NQ-CP, chủ đầu tư được tự tổ chức nghiệm thu hệ thống PCCC và tự chịu trách nhiệm trước pháp luật, thay vì chờ cơ quan công an kiểm tra như trước. Việc bỏ thủ tục không đồng nghĩa bỏ quy trình nghiệm thu — chủ đầu tư vẫn phải lập biên bản đầy đủ.',
-    content: [
-      'Nội dung chi tiết của bài viết sẽ được cập nhật tại đây. Đây là đoạn văn bản mẫu — vui lòng thay thế bằng nội dung thật khi biên tập bài.',
-      'Đoạn thứ hai: phân tích quy định mới, phạm vi áp dụng và trách nhiệm pháp lý của chủ đầu tư.',
-      'Đoạn kết: khuyến nghị cho doanh nghiệp/chủ đầu tư để tuân thủ đúng quy định.',
-    ],
+content: <TuNghiemThuPCCC />,
     date: '28/06/2026',
-    readTime: '5 phút',
-    source: 'VnExpress',
-    sourceUrl:
-      'https://vnexpress.net/tu-1-7-chu-dau-tu-tu-nghiem-thu-phong-chay-chua-chay-duoc-hieu-la-the-nao-5091502.html',
-    img: '/images/tin-tuc/bigc-cong-trinh.jpg',
+    readTime: '3 phút',
+  sources: [
+    {
+      name: "An Ninh Hải Phòng",
+      url: "https://anhp.vn/bai-bo-mot-so-thu-tuc-kiem-tra-nghiem-thu-ve-phong-chay-va-chua-chay-tu-ngay-172026-d78503.html"
+    },
+    {
+      name: "Tuổi Trẻ",
+      url: "https://tuoitre.vn/plo/tu-1-7-chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-da-tham-dinh-thiet-ke-post912786.html"
+    },
+    {
+      name: "Thư Viện Pháp Luật",
+      url: "https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-tu-0172026-theo-nghi-quyet-6618202-276131.html"
+    }
+  ],
+    imageSource: 'Bộ Công An',
+    img: '/images/tin-tuc/tintuc.webp',
     gallery: ['/images/tin-tuc/bigc-cong-trinh.jpg'],
   },
   {
@@ -61,16 +70,23 @@ export const posts = [
     title: 'Chính thức bỏ 3 thủ tục nghiệm thu PCCC với công trình từ 1/7/2026',
     excerpt:
       'Nghị quyết 66.18/2026/NQ-CP bãi bỏ 3 thủ tục hành chính PCCC: kiểm tra công tác nghiệm thu; nghiệm thu đối với công trình đã được cấp giấy chứng nhận thẩm duyệt; và phục hồi hoạt động cơ sở. Chủ đầu tư được trao thêm quyền nhưng tăng trách nhiệm pháp lý — vi phạm có thể bị truy cứu hình sự.',
-    content: [
-      'Nội dung chi tiết của bài viết sẽ được cập nhật tại đây. Đây là đoạn văn bản mẫu — vui lòng thay thế bằng nội dung thật khi biên tập bài.',
-      'Đoạn thứ hai: liệt kê chi tiết 3 thủ tục bị bãi bỏ và ảnh hưởng đến doanh nghiệp, chủ đầu tư.',
-      'Đoạn kết: lưu ý về trách nhiệm pháp lý tăng thêm và các bước cần chuẩn bị.',
-    ],
+    content: [<BoThuTuc/>],
     date: '22/06/2026',
     readTime: '4 phút',
-    source: 'VnExpress',
-    sourceUrl:
-      'https://vnexpress.net/bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-5088141.html',
+      sources: [
+    {
+      name: "VnExpress",
+      url: "https://vnexpress.net/tu-1-7-chu-dau-tu-tu-nghiem-thu-phong-chay-chua-chay-duoc-hieu-la-the-nao-5091502.html"
+    },
+    {
+      name: "Tuổi Trẻ",
+      url: "https://tuoitre.vn/chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-tu-hom-nay-1-7-100260701085049701.htm."
+    },
+    {
+      name: "Thư Viện Pháp Luật",
+      url: "https://thuvienphapluat.vn/phap-luat-doanh-nghiep/bai-viet/tu-01-7-2026-bo-thu-tuc-nghiem-thu-pccc-doi-voi-cong-trinh-da-duoc-tham-duyet-nhung-chua-duoc-chap-thuan-ket-qua-nghiem-thu-21413.html"
+    }
+  ],
     img: '/images/tin-tuc/kcn-tan-tao.jpg',
     gallery: ['/images/tin-tuc/kcn-tan-tao.jpg'],
   },
@@ -160,6 +176,7 @@ export const posts = [
     sourceUrl: null,
     relatedLink: '/san-pham#binh-chua-chay',
     img: '/images/sanpham/lang-phun-nuoc.png',
+
     gallery: ['/images/sanpham/lang-phun-nuoc.png'],
   },
   {

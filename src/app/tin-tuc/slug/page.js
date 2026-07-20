@@ -42,32 +42,43 @@ export default function BaiVietChiTietPage({ searchParams }) {
 
             {/* Nội dung chính */}
             <article className="lg:col-span-2 bg-white rounded-xl border border-gray-100 p-6 md:p-10">
-              <span className={`inline-block text-xs px-2 py-0.5 rounded-full mb-4 ${post.catColor}`}>
-                {post.cat}
-              </span>
+<span className={`inline-block text-xs px-2 py-0.5 rounded-full mb-4 ${post.catColor}`}>
+  {post.cat}
+</span>
 
-              <h1 className="text-2xl md:text-3xl font-bold text-brand-gray mb-4 leading-snug">
-                {post.title}
-              </h1>
+<h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-brand-gray">
+  {post.title}
+</h1>
 
-              <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-xs text-brand-gray-mid mb-6 pb-6 border-b border-gray-100">
-                <span>{post.date}</span>
-                <span>·</span>
-                <span>{post.readTime} đọc</span>
-                <span>·</span>
-                <span className="text-brand-red font-medium">{post.source}</span>
-              </div>
+<div className="mt-4 flex items-center gap-2 text-sm text-brand-gray-mid">
+  <span>{post.date}</span>
+  <span>•</span>
+  <span>{post.readTime} đọc</span>
+</div>
 
-              <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100 mb-8">
-                <Image src={post.img} alt={post.title} fill className="object-cover" priority />
-              </div>
+
+             <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden bg-gray-100">
+  <Image
+    src={post.img}
+    alt={post.title}
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
+
+
+  <p className="mt-2 mb-8 text-xs text-gray-500 italic text-right">
+    Ảnh: {post.imageSource}
+  </p>
+
+{/* Văn bản mẫu */}
+<div className="prose prose-sm md:prose-base ..."></div>
 
               {/* Văn bản mẫu — thay bằng nội dung thật */}
-              <div className="prose prose-sm md:prose-base max-w-none text-brand-gray-mid leading-relaxed space-y-4">
-                {post.content.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
+<div className="prose max-w-none">
+    {post.content}
+</div>
 
               {/* Ảnh mẫu bổ sung — thay bằng ảnh thật nếu cần */}
               {post.gallery && post.gallery.length > 1 && (
@@ -81,19 +92,27 @@ export default function BaiVietChiTietPage({ searchParams }) {
               )}
 
               {/* Nguồn bài viết gốc (nếu là tin tổng hợp từ báo khác) */}
-              {post.sourceUrl && (
-                <div className="mt-10 pt-6 border-t border-gray-100 text-sm text-brand-gray-mid">
-                  Nguồn:{' '}
-                  <a
-                    href={post.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-brand-red font-medium hover:underline"
-                  >
-                    {post.source}
-                  </a>
-                </div>
-              )}
+{post.sources && (
+  <div className="mt-10 pt-6 border-t border-gray-100">
+    <p className="text-sm font-medium mb-2">Nguồn tham khảo:</p>
+
+    <ul className="space-y-1 text-sm">
+      {post.sources.map((source, index) => (
+        <li key={index}>
+          {index + 1}.{" "}
+          <a
+            href={source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-red hover:underline"
+          >
+            {source.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
 
               {/* Link liên quan tới sản phẩm/dịch vụ nội bộ (nếu có) */}
               {post.relatedLink && (
