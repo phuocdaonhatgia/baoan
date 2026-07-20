@@ -6,11 +6,11 @@ export const metadata = {
 }
 
 const projects = [
-  { slug: 'novotel-da-nang', name: 'Novotel Đà Nẵng', location: 'Đà Nẵng', systems: ['Sprinkler tự động', 'Báo cháy địa chỉ', 'Camera an ninh', 'Hosereel'], img: '/images/projects/novotel.jpg' },
-  { slug: 'majestic-hotel', name: 'Khách sạn Cửu Long — Majestic', location: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Báo cháy tự động', 'Hosereel'], img: '/images/duan2/khach-san.jpg' },
-  { name: 'The Imperial Residences Vũng Tàu', location: 'Vũng Tàu', systems: ['Sprinkler', 'Báo cháy địa chỉ', 'Hosereel', 'Camera'], img: '/images/duan2/khach-san.jpg' },
-  { name: 'Khách sạn Bình Minh — Phan Thiết', location: 'Bình Thuận', systems: ['Báo cháy tự động', 'Tổng đài điện thoại'], img: '/images/duan2/khach-san.jpg' },
-  { name: 'Khách sạn Nhà khách UBND Tỉnh Bình Thuận', location: 'Bình Thuận', systems: ['Báo cháy tự động'], img: '/images/duan2/khach-san.jpg' },
+  { slug: 'novotel-da-nang', name: 'Novotel Đà Nẵng', location: 'Đà Nẵng', systems: ['Hệ thống chữa cháy khí FM200 cho phòng Server', 'Hệ thống chữa cháy tự động khí CO2'], img: '/images/projects/novotel.jpg' },
+  { slug: 'majestic-hotel', name: 'Khách sạn Cửu Long — Majestic', location: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Báo cháy tự động', 'Hosereel'], img: '/images/projects/majestic.jpg' },
+  { name: 'The Imperial Residences Vũng Tàu', location: 'Vũng Tàu', systems: ['Sprinkler', 'Báo cháy địa chỉ', 'Hosereel', 'Camera'], img: '/images/projects/khach-san.jpg' },
+  { name: 'Khách sạn Bình Minh — Phan Thiết', location: 'Bình Thuận', systems: ['Báo cháy tự động', 'Tổng đài điện thoại'], img: '/images/projects/khach-san.jpg' },
+  { name: 'Khách sạn Nhà khách UBND Tỉnh Bình Thuận', location: 'Bình Thuận', systems: ['Báo cháy tự động'], img: '/images/projects/khach-san.jpg' },
 ]
 
 export default function KhachSanPage() {
