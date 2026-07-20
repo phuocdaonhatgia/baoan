@@ -42,85 +42,119 @@ export default function BaiVietChiTietPage({ searchParams }) {
 
             {/* Nội dung chính */}
             <article className="lg:col-span-2 bg-white rounded-xl border border-gray-100 p-6 md:p-10">
-<span className={`inline-block text-xs px-2 py-0.5 rounded-full mb-4 ${post.catColor}`}>
-  {post.cat}
-</span>
 
-<h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-brand-gray">
-  {post.title}
-</h1>
+              {/* 1. Danh mục + Title */}
+              <span className={`inline-block text-xs px-2 py-0.5 rounded-full mb-4 ${post.catColor}`}>
+                {post.cat}
+              </span>
 
-<div className="mt-4 flex items-center gap-2 text-sm text-brand-gray-mid">
-  <span>{post.date}</span>
-  <span>•</span>
-  <span>{post.readTime} đọc</span>
-</div>
-{post.highlights && (
-  <div className="my-8 rounded-xl border border-red-200 bg-red-50 p-6">
-    <h3 className="mb-4 text-lg font-bold text-red-700">
-      📌 Điểm nổi bật
-    </h3>
+              <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-brand-gray">
+                {post.title}
+              </h1>
 
-    {post.highlights}
-  </div>
-)}
+              {/* 2. Ngày đăng */}
+              <div className="mt-4 flex items-center gap-2 text-sm text-brand-gray-mid">
+                <span>{post.date}</span>
+                <span>•</span>
+                <span>{post.readTime} đọc</span>
+              </div>
 
-<div className="relative mt-8 w-full h-64 md:h-96 rounded-xl overflow-hidden bg-gray-100">
-  <Image
-    src={post.img}
-    alt={post.title}
-    fill
-    className="object-cover"
-    priority
-  />
-</div>
+              {/* 3. Điểm nổi bật */}
+              {post.highlights && (
+                <div className="my-8 rounded-xl border border-red-200 bg-red-50 p-6">
+                  <h3 className="mb-4 text-lg font-bold text-red-700">
+                    📌 Điểm nổi bật
+                  </h3>
+                  {post.highlights}
+                </div>
+              )}
 
+              {/* 4. Video (nếu có) - size vừa phải + nguồn nhỏ */}
+              {post.video && (
+                <div className="my-8">
+                  <div className="mx-auto max-w-2xl overflow-hidden rounded-xl bg-black">
+                    <video
+                      controls
+                      className="w-full max-h-[420px] rounded-xl"
+                      preload="metadata"
+                    >
+                      <source src={post.video} type="video/mp4" />
+                    </video>
+                  </div>
+                  {post.videoSource && (
+                    <p className="mt-2 text-xs italic text-center text-gray-500">
+                      Nguồn video: {post.videoSource}
+                    </p>
+                  )}
+                </div>
+              )}
 
-  <p className="mt-2 mb-8 text-xs text-gray-500 italic text-right">
-    Ảnh: {post.imageSource}
-  </p>
+              {/* 5. Nội dung bài viết */}
+              <div className="prose max-w-none mt-4">
+                {post.content}
+              </div>
 
-{/* Văn bản mẫu */}
-<div className="prose prose-sm md:prose-base ..."></div>
-
-              {/* Văn bản mẫu — thay bằng nội dung thật */}
-<div className="prose max-w-none">
-    {post.content}
-</div>
-
-              {/* Ảnh mẫu bổ sung — thay bằng ảnh thật nếu cần */}
-              {post.gallery && post.gallery.length > 1 && (
-                <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                  {post.gallery.map((src, i) => (
-                    <div key={i} className="relative h-48 rounded-lg overflow-hidden bg-gray-100">
-                      <Image src={src} alt={`${post.title} - ảnh ${i + 1}`} fill className="object-cover" />
-                    </div>
-                  ))}
+              {/* 6. Ảnh minh họa trong bài (chỉ hiện khi content KHÔNG phải component
+                   tự chèn ảnh riêng - xem quy ước heroImage trong data.js) */}
+              {post.heroImage && (
+                <div className="my-8">
+                  <div className="mx-auto max-w-2xl relative w-full h-64 md:h-96 rounded-xl overflow-hidden">
+                    <Image
+                      src={post.heroImage}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                  {post.imageSource && (
+                    <p className="mt-2 text-xs italic text-center text-gray-500">
+                      Ảnh: {post.imageSource}
+                    </p>
+                  )}
                 </div>
               )}
 
               {/* Nguồn bài viết gốc (nếu là tin tổng hợp từ báo khác) */}
-{post.sources && (
-  <div className="mt-10 pt-6 border-t border-gray-100">
-    <p className="text-sm font-medium mb-2">Nguồn tham khảo:</p>
+              {post.sources && (
+                <div className="mt-10 pt-6 border-t border-gray-100">
+                  <p className="text-sm font-medium mb-2">Nguồn tham khảo:</p>
+                  <ul className="space-y-1 text-sm">
+                    {post.sources.map((source, index) => (
+                      source?.name && (
+                        <li key={index}>
+                          {index + 1}.{" "}
+                          <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-red hover:underline"
+                          >
+                            {source.name}
+                          </a>
+                        </li>
+                      )
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-    <ul className="space-y-1 text-sm">
-      {post.sources.map((source, index) => (
-        <li key={index}>
-          {index + 1}.{" "}
-          <a
-            href={source.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-brand-red hover:underline"
-          >
-            {source.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-)}
+              {/* Nguồn đơn (bài không tổng hợp nhiều nguồn) */}
+              {!post.sources && post.source && post.sourceUrl && (
+                <div className="mt-10 pt-6 border-t border-gray-100">
+                  <p className="text-sm">
+                    Nguồn:{" "}
+                    <a
+                      href={post.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-brand-red hover:underline"
+                    >
+                      {post.source}
+                    </a>
+                  </p>
+                </div>
+              )}
 
               {/* Link liên quan tới sản phẩm/dịch vụ nội bộ (nếu có) */}
               {post.relatedLink && (

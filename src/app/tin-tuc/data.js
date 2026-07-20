@@ -2,11 +2,20 @@
 //
 // type: dùng để lọc theo 3 tab đầu trang — 'tin-tuc' | 'video' | 'hinh-anh'
 // slug: dùng để tạo link chi tiết /tin-tuc/[slug]
-// content: mảng các đoạn văn cho trang chi tiết — ĐÂY LÀ VĂN BẢN MẪU, tự thay bằng nội dung thật
-// gallery: mảng ảnh cho trang chi tiết — ĐÂY LÀ ẢNH MẪU, tự thay bằng ảnh thật
-// sourceUrl: nếu bài được tổng hợp lại từ báo khác, để link "xem bài gốc" ở cuối trang chi tiết
+//
+// img: ẢNH ĐẠI DIỆN (cover) — dùng ở trang danh sách /tin-tuc, sidebar "Bài viết liên quan",
+//      trang chủ... KHÔNG dùng trong trang chi tiết. Bài nào cũng NÊN có field này.
+//
+// heroImage: ảnh minh họa hiển thị trong trang CHI TIẾT (sau phần nội dung), CHỈ dùng cho
+//      những bài có content là mảng văn bản thường. Nếu content là 1 component JSX riêng
+//      (ví dụ TuNghiemThuPCCC, PinAcQuy) mà component đó đã tự chèn ảnh bên trong rồi thì
+//      KHÔNG set heroImage nữa để tránh lặp ảnh 2 lần.
+//
+// imageSource: nguồn của heroImage, hiển thị nhỏ bên dưới ảnh ở trang chi tiết
+// sourceUrl / source: nếu bài được tổng hợp lại từ 1 báo khác, để link "xem bài gốc" ở cuối trang
+// sources: nếu bài tổng hợp từ NHIỀU báo, dùng mảng { name, url }
 import TuNghiemThuPCCC from "src/app/articles/TuNghiemThuPCCC.jsx";
-import BoThuTuc from "src/app/articles/BoThuTuc";
+import PinAcQuy from "src/app/articles/PinAcQuy";
 export const posts = [
   {
     id: 1,
@@ -28,6 +37,8 @@ export const posts = [
     sourceUrl:
       'https://anninhthudo.vn/ha-noi-dien-tap-chua-chay-cuu-ho-1000-nguoi-tai-lotte-mall-west-lake-hanoi-post659326.antd',
     img: '/images/tin-tuc/chua-chay-1.jpg',
+    heroImage: '/images/tin-tuc/chua-chay-1.jpg',
+    imageSource: 'An ninh Thủ đô',
     gallery: ['/images/tin-tuc/chua-chay-1.jpg'],
     featured: true,
   },
@@ -40,68 +51,69 @@ export const posts = [
     title: 'Từ ngày 01/7/2026 bãi bỏ thủ tục nghiệm thu về PCCC',
     excerpt:
       'Từ ngày 1/7/2026, theo Nghị quyết 66.18/2026/NQ-CP, chủ đầu tư được tự tổ chức nghiệm thu hệ thống PCCC và tự chịu trách nhiệm trước pháp luật, thay vì chờ cơ quan công an kiểm tra như trước. Việc bỏ thủ tục không đồng nghĩa bỏ quy trình nghiệm thu — chủ đầu tư vẫn phải lập biên bản đầy đủ.',
-content: <TuNghiemThuPCCC />,
+    // content là component riêng, ảnh minh họa nằm SẴN bên trong component này
+    // → KHÔNG set heroImage ở đây nữa để tránh hiển thị ảnh 2 lần.
+    content: <TuNghiemThuPCCC />,
     date: '28/06/2026',
     readTime: '3 phút',
-  sources: [
-    {
-      name: "An Ninh Hải Phòng",
-      url: "https://anhp.vn/bai-bo-mot-so-thu-tuc-kiem-tra-nghiem-thu-ve-phong-chay-va-chua-chay-tu-ngay-172026-d78503.html"
-    },
-    {
-      name: "Tuổi Trẻ",
-      url: "https://tuoitre.vn/plo/tu-1-7-chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-da-tham-dinh-thiet-ke-post912786.html"
-    },
-    {
-      name: "Thư Viện Pháp Luật",
-      url: "https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-tu-0172026-theo-nghi-quyet-6618202-276131.html"
-    }
-  ],
-    imageSource: 'Bộ Công An',
+    sources: [
+      {
+        name: "An Ninh Hải Phòng",
+        url: "https://anhp.vn/bai-bo-mot-so-thu-tuc-kiem-tra-nghiem-thu-ve-phong-chay-va-chua-chay-tu-ngay-172026-d78503.html"
+      },
+      {
+        name: "Tuổi Trẻ",
+        url: "https://tuoitre.vn/plo/tu-1-7-chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-da-tham-dinh-thiet-ke-post912786.html"
+      },
+      {
+        name: "Thư Viện Pháp Luật",
+        url: "https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-tu-0172026-theo-nghi-quyet-6618202-276131.html"
+      }
+    ],
+    // img: BẮT BUỘC giữ lại — đây là ảnh cover hiển thị ở trang danh sách & sidebar.
     img: '/images/tin-tuc/tintuc.webp',
   },
   {
     id: 3,
-    slug: 'bo-3-thu-tuc-nghiem-thu-pccc-tu-1-7-2026',
+    slug: 'vu-chay-xe-can-lam-gi-bao-dam-an-',
     type: 'tin-tuc',
-    cat: 'Pháp lý PCCC',
+    cat: 'Kiến Thức PCCC',
     catColor: 'bg-purple-50 text-purple-700',
-    title: 'Chính thức bỏ 3 thủ tục nghiệm thu PCCC với công trình từ 1/7/2026',
+    title: 'Từ vụ cháy xe chở pin tại Đà Nẵng: Cần làm gì để đảm bảo an toàn?',
     excerpt:
       'Nghị quyết 66.18/2026/NQ-CP bãi bỏ 3 thủ tục hành chính PCCC: kiểm tra công tác nghiệm thu; nghiệm thu đối với công trình đã được cấp giấy chứng nhận thẩm duyệt; và phục hồi hoạt động cơ sở. Chủ đầu tư được trao thêm quyền nhưng tăng trách nhiệm pháp lý — vi phạm có thể bị truy cứu hình sự.',
-        highlights: (
-    <ul className="list-disc space-y-3 pl-6">
-      <li>
-        <strong>Từ 01/07/2026</strong> chính thức bãi bỏ 03 thủ tục nghiệm thu
-        PCCC.
-      </li>
-      <li>
-        Chuyển từ <strong>tiền kiểm sang hậu kiểm</strong>.
-      </li>
-      <li>
-        Chủ đầu tư <strong>tự chịu trách nhiệm trước pháp luật</strong>.
-      </li>
-    </ul>
-  ),
-    content: [<BoThuTuc/>],
-    date: '22/06/2026',
+    highlights: (
+      <ul className="list-disc space-y-3 pl-6">
+        <li>
+          <strong>Từ 01/07/2026</strong> chính thức bãi bỏ 03 thủ tục nghiệm thu
+          PCCC.
+        </li>
+        <li>
+          Chuyển từ <strong>tiền kiểm sang hậu kiểm</strong>.
+        </li>
+        <li>
+          Chủ đầu tư <strong>tự chịu trách nhiệm trước pháp luật</strong>.
+        </li>
+      </ul>
+    ),
+    content: [<PinAcQuy key="pin-ac-quy" />],
+    date: '30/05/2026',
     readTime: '4 phút',
-      sources: [
-    {
-      name: "VnExpress",
-      url: "https://vnexpress.net/tu-1-7-chu-dau-tu-tu-nghiem-thu-phong-chay-chua-chay-duoc-hieu-la-the-nao-5091502.html"
-    },
-    {
-      name: "Tuổi Trẻ",
-      url: "https://tuoitre.vn/chinh-thuc-bo-thu-tuc-nghiem-thu-pccc-voi-cong-trinh-phuong-tien-tu-hom-nay-1-7-100260701085049701.htm."
-    },
-    {
-      name: "Thư Viện Pháp Luật",
-      url: "https://thuvienphapluat.vn/phap-luat-doanh-nghiep/bai-viet/tu-01-7-2026-bo-thu-tuc-nghiem-thu-pccc-doi-voi-cong-trinh-da-duoc-tham-duyet-nhung-chua-duoc-chap-thuan-ket-qua-nghiem-thu-21413.html"
-    }
-  ],
-    img: '/images/tin-tuc/tintuc.webp',
-    imageSource: 'Bộ Công An',
+    sources: [
+      {
+        name: "VnExpress",
+        url: "https://vnexpress.net/luat-quy-dinh-van-chuyen-pin-ac-quy-the-nao-de-chong-chay-no-xe-5078957.html"
+      },
+      {
+        name: "Báo Hải Phòng",
+        url: "https://baohaiphong.vn/xe-cho-pin-va-ac-quy-can-tuan-thu-quy-dinh-gi-de-tranh-chay-no-543259.html"
+      },
+    ],
+    video: "/video/pin-acquy.mp4",
+    videoSource: "Camera An Ninh",
+    // img: ảnh cover cho danh sách/sidebar. Bài này minh họa chính bằng video
+    // nên KHÔNG set heroImage (tránh vừa có video vừa có ảnh lặp trong bài).
+    img: '/images/tin-tuc/techz.jpg',
   },
   {
     id: 4,
@@ -123,6 +135,8 @@ content: <TuNghiemThuPCCC />,
     sourceUrl:
       'https://vnexpress.net/bang-tra-cuu-10-000-nha-cho-thue-doanh-nghiep-thuoc-dien-kiem-tra-cua-cong-an-ha-noi-5072632.html',
     img: '/images/tin-tuc/bigc-ninh-binh.jpg',
+    heroImage: '/images/tin-tuc/bigc-ninh-binh.jpg',
+    imageSource: 'VnExpress',
     gallery: ['/images/tin-tuc/bigc-ninh-binh.jpg'],
   },
   {
@@ -145,6 +159,8 @@ content: <TuNghiemThuPCCC />,
     sourceUrl:
       'https://tuoitre.vn/31-chien-si-bi-bong-bi-axit-vang-vao-mat-khi-chua-chay-cong-ty-tai-khu-che-xuat-tan-thuan-20200501153408872.htm',
     img: '/images/tin-tuc/ngon-lua.jpg',
+    heroImage: '/images/tin-tuc/ngon-lua.jpg',
+    imageSource: 'Tuổi Trẻ',
     gallery: ['/images/tin-tuc/ngon-lua.jpg'],
   },
   {
@@ -167,6 +183,8 @@ content: <TuNghiemThuPCCC />,
     sourceUrl: null,
     relatedLink: '/san-pham#sprinkler',
     img: '/images/tieuchuan2/tc-hoat-dong-cong-truong.jpg',
+    heroImage: '/images/tieuchuan2/tc-hoat-dong-cong-truong.jpg',
+    imageSource: 'Bảo An Engineering',
     gallery: ['/images/tieuchuan2/tc-hoat-dong-cong-truong.jpg'],
   },
   {
@@ -189,7 +207,8 @@ content: <TuNghiemThuPCCC />,
     sourceUrl: null,
     relatedLink: '/san-pham#binh-chua-chay',
     img: '/images/sanpham/lang-phun-nuoc.png',
-
+    heroImage: '/images/sanpham/lang-phun-nuoc.png',
+    imageSource: 'Bảo An Engineering',
     gallery: ['/images/sanpham/lang-phun-nuoc.png'],
   },
   {
@@ -212,6 +231,8 @@ content: <TuNghiemThuPCCC />,
     sourceUrl: null,
     relatedLink: '/dich-vu',
     img: '/images/dichvu/bien-phap-thi-cong.jpg',
+    heroImage: '/images/dichvu/bien-phap-thi-cong.jpg',
+    imageSource: 'Bảo An Engineering',
     gallery: ['/images/dichvu/bien-phap-thi-cong.jpg'],
   },
 ]
