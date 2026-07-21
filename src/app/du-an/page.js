@@ -13,7 +13,7 @@ const categories = [
   { label: 'Siêu thị & TTTM',      href: '/du-an/sieu-thi-tttm',     count: 15  },
   { label: 'Nhà máy & Khu CN',     href: '/du-an/nha-may-khu-cn',    count: 15 },
   { label: 'Khách sạn và căn hộ cao tầng', href: '/du-an/khach-san',  count: 2  },
-  { label: 'Công trình công cộng', href: '/du-an/cong-trinh-cong-cong', count: 3 },
+  { label: 'Dự án khác', href: '/du-an/khac', count: 3 },
 ]
 
 const projectGroups = [

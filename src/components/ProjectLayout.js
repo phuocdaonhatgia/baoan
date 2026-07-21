@@ -6,10 +6,9 @@ import Footer from '@/components/Footer'
 const categories = [
   { label: 'Tất cả dự án',         href: '/du-an' },
   { label: 'Siêu thị & TTTM',      href: '/du-an/sieu-thi-tttm' },
-  { label: 'Nhà máy & Khu CN',     href: '/du-an/nha-may-khu-cn' },
-  { label: 'Khách sạn',            href: '/du-an/khach-san' },
-  { label: 'Cao tầng & Căn hộ',    href: '/du-an/cao-tang-can-ho' },
-  { label: 'Công trình công cộng', href: '/du-an/cong-trinh-cong-cong' },
+  { label: 'Nhà máy & Khu CN',     href: '/du-an/nha-may-khu-cn'},
+  { label: 'Khách sạn và căn hộ cao tầng', href: '/du-an/khach-san'},
+  { label: 'Dự án khác', href: '/du-an/khac' },
 ]
 
 export default function ProjectLayout({ title, desc, currentHref, projects, stats }) {
