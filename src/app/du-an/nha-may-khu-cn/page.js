@@ -29,7 +29,7 @@ export default function NhaMayKhuCNPage() {
       title="Nhà máy & Khu công nghiệp"
       desc="Thi công hệ thống PCCC cho các nhà máy sản xuất, khu công nghiệp trong và ngoài nước tại Việt Nam. Tuân thủ nghiêm ngặt tiêu chuẩn NFPA, APSAD được yêu cầu bởi các tập đoàn đa quốc gia."
       currentHref="/du-an/nha-may-khu-cn"
-      stats={[['30+', 'Nhà máy lớn'], ['Intel · Bosch · Colgate', 'Khách hàng tiêu biểu'], ['NFPA · APSAD', 'Tiêu chuẩn áp dụng'], ['2003', 'Năm bắt đầu']]}
+      stats={[['30+', 'Nhà máy lớn'], ['Tata Coffee · Bosch · Olam · Intersnack', 'Khách hàng tiêu biểu'], ['NFPA · APSAD', 'Tiêu chuẩn áp dụng'], ['2003', 'Năm bắt đầu']]}
       projects={projects}
     />
   )

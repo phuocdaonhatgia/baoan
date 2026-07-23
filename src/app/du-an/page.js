@@ -46,9 +46,9 @@ const projectGroups = [
     href: '/du-an/khach-san',
     projects: [
       { slug: 'majestic-hotel',      name: 'Khách sạn Majestic', detail: 'TP. Hồ Chí Minh', systems: ['Chữa cháy tự động', 'Chữa cháy vách tường', 'Hệ thống báo cháy'], img: '/images/projects/majestic.webp' },
-      { slug: 'novotel-da-nang',     name: 'Khách sạn Novotel Đà Nẵng', detail: 'Đà Nẵng', systems: ['Chữa cháy khí CO2', 'FM200 phòng Server'], img: '/images/projects/novotel.jpg' },
-      { slug: 'hung-ngan',           name: 'Khu cao tầng Hưng Ngân', detail: 'TP. Hồ Chí Minh', systems: ['Hệ thống PCCC & chống sét Block B1'], img: '/images/projects/hung ngan.jpg' },
-      { slug: 'imperial-vung-tau',   name: 'The Imperial Residences', detail: 'Vũng Tàu', systems: ['Sprinkler', 'Chữa cháy vách tường', 'Báo cháy tự động'], img: '/images/projects/imperiall.jpg' },
+      { slug: 'novotel-da-nang',     name: 'Khách sạn Novotel Đà Nẵng', detail: 'Đà Nẵng', systems: ['Chữa cháy khí CO2', 'FM200 phòng Server'], img: '/images/projects/novotel1.jpg' },
+      { slug: 'hung-ngan',           name: 'Khu nhà ở cao tầng và khu phức hợp thương mại Hưng Ngân', detail: 'TP. Hồ Chí Minh', systems: ['Hệ thống PCCC & chống sét Block B1'], img: '/images/projects/hung ngan.jpg' },
+      { slug: 'imperial-vung-tau',   name: 'The Imperial Residences', detail: 'Vũng Tàu', systems: ['Sprinkler', 'Chữa cháy vách tường', 'Báo cháy tự động'], img: '/images/projects/imperial.webp' },
       { slug: 'riviera-point',       name: 'Riviera Point Quận 7', detail: 'TP. Hồ Chí Minh', systems: ['Thiết kế PCCC', 'Hệ thống chống sét'], img: '/images/projects/river.jpeg' },
     ],
   },
@@ -57,7 +57,6 @@ const projectGroups = [
     href: '/du-an/cong-trinh-cong-cong',
     projects: [
       { slug: 'ubnd-hcm',            name: 'Trụ sở UBND TP. Hồ Chí Minh', detail: 'TP. Hồ Chí Minh', systems: ['Camera quan sát', 'Báo cháy tự động'], img: '/images/projects/ubnd.webp' },
-      { slug: 'ubnd-dong-nai',       name: 'Trụ sở UBND Tỉnh Đồng Nai', detail: 'Đồng Nai', systems: ['Camera', 'Chống sét', 'Hệ thống báo cháy'], img: '/images/projects/dong nai.jpeg' },
       { slug: 'thu-vien-dong-nai',   name: 'Thư Viện Tỉnh Đồng Nai', detail: 'Đồng Nai', systems: ['Báo cháy tự động', 'Hệ thống chống sét'], img: '/images/projects/thuvien.jpg' },
     ],
   },

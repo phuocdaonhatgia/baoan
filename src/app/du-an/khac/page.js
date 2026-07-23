@@ -8,10 +8,9 @@ export const metadata = {
 const projects = [
   { name: 'Karaoke Thái Bình', location: 'Đồng Hới', systems: ['Sprinkler tự động', 'Báo cháy tự động','Chữa cháy vách tường','Chữa cháy Sol Khí cho các phòng hát','Hệ thống Cửa thoát hiểm, Chống Sét','Đèn chiếu sáng sự cố và thoát hiểm'], img: '/images/projects/thaibinh.jpg' },
   { name: 'Trung tâm kho vận Yên Nghĩa', location: 'Hà Nội', systems: ['Hệ thống báo cháy tự động'], img: '/images/projects/kho van.png' },
-  { name: '	Phòng khám 2 – Viện Tim TP.HCM', location: 'Hồ Chí Minh', systems: ['........'], img: '/images/projects/vientim.jpg' },
-  { name: 'Lotte Cinema Hạ Long', location: 'Quảng Ninh', systems: ['.......'], img: '/images/projects/lotte.webp' },
+  { name: '	Phòng khám 2 – Viện Tim TP.HCM', location: 'Hồ Chí Minh', systems: ['Sprinkler tự động','Hệ thộng báo cháy','Chữa cháy vách tường'], img: '/images/projects/vientim.jpg' },
+  { name: 'Lotte Cinema Hạ Long', location: 'Quảng Ninh', systems: ['Sprinkler tự động','Hệ thống báo cháy'], img: '/images/projects/lotte.webp' },
 ]
-
 export default function DuAnKhac() {
   return (
     <ProjectLayout
