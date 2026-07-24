@@ -186,7 +186,7 @@ export default function HomePage() {
         <section className="bg-white py-8 border-b border-gray-100">
           <div className="container-main">
             <p className="text-brand-gray-mid text-center text-lg leading-relaxed max-w-1xl mx-auto">
-              <strong className="text-brand-red">Bảo An Engineering</strong> — thành lập năm 1999, chuyên môn hóa bởi tiêu chuẩn công nghiệp cao nhất về PCCC.
+              <strong className="text-brand-red">Bảo An Engineering</strong> — thành lập năm 1998, chuyên môn hóa bởi tiêu chuẩn công nghiệp cao nhất về PCCC.
                <em className="text-brand-red"><br></br>"Bạn không cần nhiều, mà chỉ cần đúng!"</em >
             </p>
           </div>
@@ -211,7 +211,7 @@ export default function HomePage() {
               </div>
               <div>
                 <div className="text-brand-red font-semibold text-sm uppercase tracking-widest mb-3">Về chúng tôi</div>
-                <h2 className="text-2xl font-bold text-brand-gray mb-4">Bảo An Engineering — Thành lập từ năm 1999</h2>
+                <h2 className="text-2xl font-bold text-brand-gray mb-4">Bảo An Engineering — Thành lập từ năm 1998</h2>
                 <p className="text-brand-gray-mid leading-relaxed mb-4">
                   Công ty TNHH Bảo An hoạt động trong lĩnh vực tư vấn thiết kế, cung cấp và lắp đặt hệ thống
                   PCCC cho các công trình công nghiệp và thương mại trên toàn quốc.

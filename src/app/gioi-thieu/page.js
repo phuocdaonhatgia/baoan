@@ -5,11 +5,11 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Giới thiệu công ty',
-  description: 'Bảo An Engineering — thành lập 1999, chuyên tư vấn thiết kế, cung cấp và lắp đặt hệ thống PCCC. 3 chi nhánh Đồng Nai, TP.HCM, Hà Nội.',
+  description: 'Bảo An Engineering — thành lập 1998, chuyên tư vấn thiết kế, cung cấp và lắp đặt hệ thống PCCC. 3 chi nhánh Đồng Nai, TP.HCM, Hà Nội.',
 }
 
 const milestones = [
-  { year: '1999', event: 'Thành lập Công ty TNHH Bảo An tại Khu công nghiệp Bình Sơn, Long Thành, Đồng Nai' },
+  { year: '1998', event: 'Thành lập Công ty TNHH Bảo An tại Khu công nghiệp Bình Sơn, Long Thành, Đồng Nai' },
   { year: '2001', event: 'Hoàn thành dự án đầu tiên — hệ thống PCCC cho các nhà máy tại Đồng Nai' },
   { year: '2005', event: 'Mở chi nhánh TP. Hồ Chí Minh, bắt đầu hợp tác với Metro Cash & Carry' },
   { year: '2007', event: 'Được các nhà cung cấp các thiết bị chính hãng' },
@@ -62,7 +62,7 @@ export default function GioiThieuPage() {
             <div>
               <h1 className="text-3xl font-bold mb-4">Công ty TNHH Bảo An</h1>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Thành lập từ tháng 6 năm 1999 tại Khu công nghiệp Bình Sơn, Long Thành, Đồng Nai.
+                Thành lập từ tháng 6 năm 1998 tại Khu công nghiệp Bình Sơn, Long Thành, Đồng Nai.
                 Bảo An Engineering chuyên tư vấn thiết kế, cung cấp và lắp đặt hệ thống phòng cháy
                 chữa cháy cho các công trình công nghiệp, thương mại và dân dụng trên toàn quốc.
               </p>
@@ -70,7 +70,7 @@ export default function GioiThieuPage() {
                 "Bạn không cần nhiều, mà chỉ cần đúng!"
               </p>
               <div className="grid grid-cols-2 gap-4">
-                {[['1999', 'Năm thành lập'], ['500+', 'Công trình'], ['3', 'Chi nhánh'], ['50+', 'Khách hàng lớn']].map(([num, label]) => (
+                {[['1998', 'Năm thành lập'], ['500+', 'Công trình'], ['3', 'Chi nhánh'], ['50+', 'Khách hàng lớn']].map(([num, label]) => (
                   <div key={label} className="bg-gray-800/80 rounded-xl p-4 border border-gray-700 text-center">
                     <div className="text-2xl font-bold text-brand-red mb-1">{num}</div>
                     <div className="text-gray-400 text-sm">{label}</div>

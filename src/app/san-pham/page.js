@@ -8,9 +8,6 @@ export const metadata = {
   description: 'Thiết bị PCCC chính hãng: Sprinkler, Hosereel, Hydrant, Bình chữa cháy, Báo cháy, FM200, Cửa chống cháy — Tiêu chuẩn UL, FM, BS, TCVN.',
 }
 
-// ================================================================
-// DỮ LIỆU SẢN PHẨM THẬT từ file thông tin Bảo An Engineering
-// ================================================================
 const categories = [
   {
     id: 'sprinkler',

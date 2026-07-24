@@ -1,4 +1,5 @@
 import './globals.css'
+import FloatingButtons from 'src/components/FloatingButton.js'
 
 export const metadata = {
   title: { default: 'Bảo An Engineering – Tư vấn, Lắp đặt Hệ thống PCCC', template: '%s | Bảo An Engineering' },
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="vi">
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingButtons />
+      </body>
     </html>
   )
 }
