@@ -1,20 +1,20 @@
 // Dữ liệu sản phẩm PCCC — tổng hợp từ hồ sơ "List of Material Approval"
 // và các catalogue kỹ thuật gốc (Tyco, Fivalco, Potter, Jakob, DSW, Bảo An, Jotun...)
 // Ảnh: dùng ảnh mẫu tạm thời — thay bằng ảnh thật tại /public/images/sanpham/
-
+import Image from 'next/image'
 const PLACEHOLDER_IMG = '/images/sanpham/hinhanhmau.jpg'
 
 export const categories = [
   {
     id: 'ong-va-phu-kien-thep',
-    title: 'Ống thép & Phụ kiện đường ống',
+    title: 'Ống thép cacbon dùng cho hệ thống chữa cháy',
     desc: 'Hệ thống đường ống thép cho công trình PCCC — ống thép đen, phụ kiện ren, phụ kiện hàn, khớp nối rãnh và mặt bích, tuân thủ tiêu chuẩn ASTM, ANSI.',
     products: [
       {
         id: 'ff001',
         code: 'FF001',
-        name: 'Ống thép đen DN25 – DN150',
-        img: PLACEHOLDER_IMG,
+        name: 'Ống thép cacbon DN25 – DN150',
+        img: '/images/san-pham/seahongthep.jpg',
         brand: 'Seah / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF001' },
@@ -23,13 +23,13 @@ export const categories = [
           { label: 'Độ dày thành ống', value: 'DN25: 3.38mm — DN150: 7.11mm' },
           { label: 'Ứng dụng', value: 'Đường ống chính và nhánh hệ thống PCCC' },
         ],
-        desc: 'Ống thép đen dùng cho hệ thống đường ống chữa cháy, đáp ứng tiêu chuẩn ASTM A53 Schedule 40 Grade A. Độ dày thành ống thay đổi theo từng cỡ ống, đảm bảo khả năng chịu áp lực làm việc của hệ thống Sprinkler và Hydrant.',
+        desc: 'Ống thép cacbon dùng cho hệ thống đường ống chữa cháy, đáp ứng tiêu chuẩn ASTM A53 Schedule 40 Grade A. Độ dày thành ống thay đổi theo từng cỡ ống, đảm bảo khả năng chịu áp lực làm việc của hệ thống Sprinkler và Hydrant.',
         detail: 'Đây là chủng loại ống thép được sử dụng phổ biến nhất trong các công trình PCCC tại Việt Nam, phù hợp cho cả đường ống chính và đường ống nhánh cấp nước tới đầu phun Sprinkler, họng nước vách tường. Ống được sản xuất theo tiêu chuẩn ASTM A53 Schedule 40 Grade A, đảm bảo độ bền cơ học và khả năng chịu áp lực thử nghiệm theo yêu cầu của TCVN và NFPA. Sản phẩm cần được sơn phủ chống gỉ (xem thêm mục Sơn chuyên dụng) trước khi lắp đặt và bàn giao.',
       },
       {
         id: 'ff002',
         code: 'FF002',
-        name: 'Ống thép đen DN250',
+        name: 'Ống thép cacbon DN250',
         img: PLACEHOLDER_IMG,
         brand: 'Cangzhou Huaye / Trung Quốc',
         specs: [
@@ -39,7 +39,7 @@ export const categories = [
           { label: 'Độ dày thành ống', value: '9.27mm' },
           { label: 'Ứng dụng', value: 'Tuyến ống chính cấp nước PCCC lưu lượng lớn' },
         ],
-        desc: 'Ống thép đen cỡ lớn DN250, tiêu chuẩn ASTM A53M Schedule 40 Grade B, dùng cho các tuyến ống trục chính tại công trình có lưu lượng nước chữa cháy lớn như nhà máy, kho xưởng quy mô lớn.',
+        desc: 'Ống thép cacbon cỡ lớn DN250, tiêu chuẩn ASTM A53M Schedule 40 Grade B, dùng cho các tuyến ống trục chính tại công trình có lưu lượng nước chữa cháy lớn như nhà máy, kho xưởng quy mô lớn.',
         detail: 'Ống DN250 thường được sử dụng làm tuyến ống trục chính (main riser) dẫn nước từ trạm bơm chữa cháy đến các khu vực phân phối trong công trình có diện tích lớn hoặc yêu cầu lưu lượng cao. Độ dày thành ống 9.27mm đảm bảo an toàn ở áp lực làm việc và áp lực thử nghiệm theo tiêu chuẩn ASTM A53M Grade B.',
       },
       {

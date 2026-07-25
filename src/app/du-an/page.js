@@ -9,11 +9,11 @@ export const metadata = {
 }
 
 const categories = [
-  { label: 'Tất cả dự án',         href: '/du-an',                    count: 21 },
-  { label: 'Siêu thị & TTTM',      href: '/du-an/sieu-thi-tttm',     count: 15  },
-  { label: 'Nhà máy & Khu CN',     href: '/du-an/nha-may-khu-cn',    count: 15 },
-  { label: 'Khách sạn và căn hộ cao tầng', href: '/du-an/khach-san',  count: 2  },
-  { label: 'Dự án khác', href: '/du-an/khac', count: 3 },
+  { label: 'Tất cả dự án',         href: '/du-an',                   },
+  { label: 'Siêu thị & TTTM',      href: '/du-an/sieu-thi-tttm',    },
+  { label: 'Nhà máy & Khu CN',     href: '/du-an/nha-may-khu-cn', },
+  { label: 'Khách sạn và căn hộ cao tầng', href: '/du-an/khach-san',},
+  { label: 'Dự án khác', href: '/du-an/khac',},
 ]
 
 const projectGroups = [
@@ -26,7 +26,7 @@ const projectGroups = [
       { slug: 'bigc-can-tho', name: 'Big C Cần Thơ và GO! Cần Thơ', type: 'Siêu thị & TTTM', location: 'Cần Thơ', systems: ['Hệ thống Sprinkler tự động', 'Hệ thống báo cháy tự động', 'Màn cuốn tự động ngăn khói cháy'], img: '/images/projects/gocantho.jpg' },
       { slug: 'mm-mega-market-an-phu', name: 'MM Mega Market An Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Hệ thống đèn chiếu sáng sự cố và thoát hiểm'], img: '/images/projects/mm an phu.jpg' },
       { slug: 'mm-mega-market-hiep-phu', name: 'MM Mega Market Hiệp Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Hệ thống đèn chiếu sáng sự cố và thoát hiểm'], img: '/images/projects/mm hiep phuu.jpg' },
-      { slug: 'mm-mega-market-binh-phu', name: 'MM Mega Market Bình Phú', detail: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Đèn thoát hiểm sự cố'], img: '/images/projects/mm binh phu.png' },
+      { slug: 'mm-mega-market-binh-phu', name: 'MM Mega Market Bình Phú', detail: 'TP. Hồ Chí Minh', systems: ['Hệ thống chữa cháy tự động Sprinkler', 'Hệ thống chữa vách tường và bình chữa cháy', 'Hệ thống báo cháy tự động', 'Hệ thống chữa cháy CO2 tự động'], img: '/images/projects/binhphu.webp' },
     ],
   },
   {
