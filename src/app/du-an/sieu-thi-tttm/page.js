@@ -29,7 +29,7 @@ export default function SieuThiTTTMPage() {
       title="Siêu thị & Trung tâm thương mại"
       desc="24 siêu thị Big C/Go! và 21 trung tâm MM Mega Market (Metro Cash & Carry) trên toàn quốc — Bảo An Engineering là đối tác PCCC tin cậy hơn 20 năm."
       currentHref="/du-an/sieu-thi-tttm"
-      stats={[['50+', 'Công trình'], ['24', 'Big C / Go!'], ['21', 'MM Mega Market'], ['2001', 'Năm bắt đầu']]}
+      stats={[['60+', 'Công trình'], ['24', 'Big C / Go!'], ['21', 'MM Mega Market'], ['2001', 'Năm bắt đầu']]}
       projects={projects}
     />
   )
