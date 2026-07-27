@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { categories } from '@/app/data/products'
+import ProductImageFrame from '@/components/ProductImageFrame'
+import { categories } from '@/data/products'
 
 export const metadata = {
   title: 'Sản phẩm PCCC',
@@ -84,14 +84,14 @@ export default function SanPhamPage() {
                           {/* Ảnh sản phẩm */}
                           <Link
                             href={`/san-pham/${p.id}`}
-                            className="md:col-span-1 bg-gray-50 flex items-center justify-center p-6 border-b md:border-b-0 md:border-r border-gray-100 min-h-[200px]"
+                            className="md:col-span-1 bg-white flex items-center justify-center p-5 border-b md:border-b-0 md:border-r border-gray-100"
                           >
-                            <div className="relative w-full max-w-[200px] h-48">
-                              <Image
+                            <div className="w-full max-w-[220px]">
+                              <ProductImageFrame
                                 src={p.img}
                                 alt={p.name}
-                                fill
-                                className="object-contain"
+                                tag={p.code}
+                                backdropPadding="p-4"
                               />
                             </div>
                           </Link>

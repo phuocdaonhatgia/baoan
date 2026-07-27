@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { categories, findProductById, getAllProductIds }  from '@/app/data/products'
+import ProductImageFrame from '@/components/ProductImageFrame'
+import { findProductById, getAllProductIds, getSpecChips } from '@/data/products'
 
 export async function generateStaticParams() {
   return getAllProductIds().map(id => ({ id }))
@@ -51,13 +51,14 @@ export default function ChiTietSanPhamPage({ params }) {
           <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
               {/* Ảnh sản phẩm */}
-              <div className="bg-gray-50 flex items-center justify-center p-10 border-b md:border-b-0 md:border-r border-gray-100 min-h-[360px]">
-                <div className="relative w-full max-w-[320px] h-80">
-                  <Image
+              <div className="bg-white flex items-center justify-center p-8 border-b md:border-b-0 md:border-r border-gray-100">
+                <div className="w-full max-w-[360px]">
+                  <ProductImageFrame
                     src={product.img}
                     alt={product.name}
-                    fill
-                    className="object-contain"
+                    tag={product.code}
+                    chips={getSpecChips(product)}
+                    backdropPadding="p-6"
                   />
                 </div>
               </div>
@@ -126,10 +127,14 @@ export default function ChiTietSanPhamPage({ params }) {
                     href={`/san-pham/${p.id}`}
                     className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-brand-red hover:shadow-md transition-all duration-200 block"
                   >
-                    <div className="bg-gray-50 flex items-center justify-center p-6 h-40 border-b border-gray-100">
-                      <div className="relative w-full h-full">
-                        <Image src={p.img} alt={p.name} fill className="object-contain" />
-                      </div>
+                    <div className="bg-white p-4 border-b border-gray-100">
+                      <ProductImageFrame
+                        src={p.img}
+                        alt={p.name}
+                        tag={p.code}
+                        aspect="aspect-[4/3]"
+                        backdropPadding="p-3"
+                      />
                     </div>
                     <div className="p-4">
                       <p className="text-xs text-brand-gray-mid mb-1">Mã: {p.code}</p>
