@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ProductImageFrame from '@/components/ProductImageFrame'
-import { categories } from '@/data/products'
+import { categories, getQuickSpecs } from "@/data/products";
 
 export const metadata = {
   title: 'Sản phẩm PCCC',
@@ -126,19 +126,27 @@ export default function SanPhamPage() {
 
                             <p className="text-brand-gray-mid text-sm leading-relaxed mb-4">{p.desc}</p>
 
-                            {/* Thông số kỹ thuật */}
+                            {/* Thông số kỹ thuật (tóm tắt) */}
                             <div>
                               <p className="text-xs font-semibold text-brand-gray uppercase tracking-wide mb-2">
                                 Thông số kỹ thuật
                               </p>
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-                                {p.specs.map(spec => (
+                                {getQuickSpecs(p, 4).map(spec => (
                                   <div key={spec.label} className="flex items-start gap-2 text-xs bg-gray-50 rounded-lg px-3 py-2">
                                     <span className="text-brand-gray-mid min-w-[100px] flex-shrink-0">{spec.label}:</span>
                                     <span className="text-brand-gray font-medium leading-relaxed">{spec.value}</span>
                                   </div>
                                 ))}
                               </div>
+                              {p.specs.length > 5 && (
+                                <Link
+                                  href={`/san-pham/${p.id}`}
+                                  className="inline-block mt-2 text-xs text-brand-red font-semibold hover:underline"
+                                >
+                                  Xem đầy đủ {p.specs.length} thông số →
+                                </Link>
+                              )}
                             </div>
                           </div>
                         </div>
