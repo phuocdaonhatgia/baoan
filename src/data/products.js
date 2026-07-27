@@ -2,18 +2,18 @@
 // và các catalogue kỹ thuật gốc (Tyco, Fivalco, Potter, Jakob, DSW, Bảo An, Jotun...)
 // Ảnh: dùng ảnh mẫu tạm thời — thay bằng ảnh thật tại /public/images/sanpham/
 import Image from 'next/image'
-const PLACEHOLDER_IMG = '/images/sanpham/hinhanhmau.jpg'
+
 
 export const categories = [
   {
     id: 'ong-va-phu-kien-thep',
     title: 'Ống thép & Phụ kiện đường ống',
-    desc: 'Hệ thống đường ống thép cho công trình PCCC — ống thép đen, phụ kiện ren, phụ kiện hàn, khớp nối rãnh và mặt bích, tuân thủ tiêu chuẩn ASTM, ANSI.',
+    desc: 'Hệ thống đường ống thép cho công trình PCCC — ống thép cacbon, phụ kiện ren, phụ kiện hàn, khớp nối rãnh và mặt bích, tuân thủ tiêu chuẩn ASTM, ANSI.',
     products: [
       {
         id: 'ff001',
         code: 'FF001',
-        name: 'Ống thép đen DN25 – DN150',
+        name: 'Ống thép cacbon DN25 – DN150',
         img: "/images/san-pham/seahongthep.jpg",
         brand: 'Seah / Việt Nam',
         specs: [
@@ -23,14 +23,14 @@ export const categories = [
           { label: 'Độ dày thành ống', value: 'DN25: 3.38mm — DN150: 7.11mm' },
           { label: 'Ứng dụng', value: 'Đường ống chính và nhánh hệ thống PCCC' },
         ],
-        desc: 'Ống thép đen dùng cho hệ thống đường ống chữa cháy, đáp ứng tiêu chuẩn ASTM A53 Schedule 40 Grade A. Độ dày thành ống thay đổi theo từng cỡ ống, đảm bảo khả năng chịu áp lực làm việc của hệ thống Sprinkler và Hydrant.',
+        desc: 'Ống thép cacbon dùng cho hệ thống đường ống chữa cháy, đáp ứng tiêu chuẩn ASTM A53 Schedule 40 Grade A. Độ dày thành ống thay đổi theo từng cỡ ống, đảm bảo khả năng chịu áp lực làm việc của hệ thống Sprinkler và Hydrant.',
         detail: 'Đây là chủng loại ống thép được sử dụng phổ biến nhất trong các công trình PCCC tại Việt Nam, phù hợp cho cả đường ống chính và đường ống nhánh cấp nước tới đầu phun Sprinkler, họng nước vách tường. Ống được sản xuất theo tiêu chuẩn ASTM A53 Schedule 40 Grade A, đảm bảo độ bền cơ học và khả năng chịu áp lực thử nghiệm theo yêu cầu của TCVN và NFPA. Sản phẩm cần được sơn phủ chống gỉ (xem thêm mục Sơn chuyên dụng) trước khi lắp đặt và bàn giao.',
       },
       {
         id: 'ff002',
         code: 'FF002',
-        name: 'Ống thép đen DN250',
-        img: PLACEHOLDER_IMG,
+        name: 'Ống thép cac DN250',
+        img: "/images/san-pham/ff02.png",
         brand: 'Cangzhou Huaye / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF002' },
@@ -39,14 +39,14 @@ export const categories = [
           { label: 'Độ dày thành ống', value: '9.27mm' },
           { label: 'Ứng dụng', value: 'Tuyến ống chính cấp nước PCCC lưu lượng lớn' },
         ],
-        desc: 'Ống thép đen cỡ lớn DN250, tiêu chuẩn ASTM A53M Schedule 40 Grade B, dùng cho các tuyến ống trục chính tại công trình có lưu lượng nước chữa cháy lớn như nhà máy, kho xưởng quy mô lớn.',
+        desc: 'Ống thép cacbon cỡ lớn DN250, tiêu chuẩn ASTM A53M Schedule 40 Grade B, dùng cho các tuyến ống trục chính tại công trình có lưu lượng nước chữa cháy lớn như nhà máy, kho xưởng quy mô lớn.',
         detail: 'Ống DN250 thường được sử dụng làm tuyến ống trục chính (main riser) dẫn nước từ trạm bơm chữa cháy đến các khu vực phân phối trong công trình có diện tích lớn hoặc yêu cầu lưu lượng cao. Độ dày thành ống 9.27mm đảm bảo an toàn ở áp lực làm việc và áp lực thử nghiệm theo tiêu chuẩn ASTM A53M Grade B.',
       },
       {
         id: 'ff016',
         code: 'FF016',
         name: 'Phụ kiện ren gang dẻo (Malleable Iron Fitting)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Mech / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF016' },
@@ -62,14 +62,14 @@ export const categories = [
         id: 'ff017',
         code: 'FF017',
         name: 'Phụ kiện hàn đối đầu (Butt Welding Fitting)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Dy Bend Vina / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF017' },
           { label: 'Loại phụ kiện', value: 'Co 90°, Tê đều, Tê giảm, Măng sông giảm' },
           { label: 'Kích cỡ', value: 'DN65 đến DN250' },
           { label: 'Kiểu kết nối', value: 'Hàn đối đầu (Butt Welding)' },
-          { label: 'Vật liệu', value: 'Thép đen' },
+          { label: 'Vật liệu', value: 'Thép cacbon' },
         ],
         desc: 'Phụ kiện thép hàn đối đầu cho các tuyến ống chính cỡ lớn DN65–DN250, đảm bảo độ bền và độ kín khít mối hàn cho hệ thống áp lực cao.',
         detail: 'Sử dụng cho các tuyến ống trục chính và ống trục đứng nơi yêu cầu độ bền kết nối cao. Mối hàn đối đầu đảm bảo độ kín tuyệt đối, phù hợp lắp đặt tại các vị trí chịu áp lực và rung động trong quá trình vận hành hệ thống bơm chữa cháy.',
@@ -78,7 +78,7 @@ export const categories = [
         id: 'ff018',
         code: 'FF018',
         name: 'Khớp nối rãnh (Grooved Coupling) Type 1G',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'WPT / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF018' },
@@ -93,15 +93,15 @@ export const categories = [
         id: 'ff019',
         code: 'FF019',
         name: 'Mặt bích thép Slip On',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Phú Long / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF019' },
           { label: 'Tiêu chuẩn', value: 'ANSI B16.5, Class 150' },
           { label: 'Loại', value: 'Slip On, hàn đối đầu' },
-          { label: 'Vật liệu', value: 'Thép đen' },
+          { label: 'Vật liệu', value: 'Thép cacbon' },
         ],
-        desc: 'Mặt bích thép đen loại Slip On theo tiêu chuẩn ANSI B16.5 Class 150, dùng để kết nối van và thiết bị vào đường ống chính của hệ thống PCCC.',
+        desc: 'Mặt bích thép cacbon loại Slip On theo tiêu chuẩn ANSI B16.5 Class 150, dùng để kết nối van và thiết bị vào đường ống chính của hệ thống PCCC.',
         detail: 'Mặt bích Slip On được hàn vào đầu ống, dùng làm điểm kết nối với van, thiết bị đo, hoặc các đoạn ống khác trong hệ thống. Class 150 phù hợp với áp lực làm việc thông thường của hệ thống chữa cháy dân dụng và công nghiệp.',
       },
     ],
@@ -115,7 +115,7 @@ export const categories = [
         id: 'ff003',
         code: 'FF003',
         name: 'Đầu phun Sprinkler K=5.6 (Upright & Pendent)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/ff03.png",
         brand: 'Tyco / Vương quốc Anh',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF003' },
@@ -133,7 +133,7 @@ export const categories = [
         id: 'ff004',
         code: 'FF004',
         name: 'Đầu phun Sprinkler Upright K=8.0',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/ff04.png",
         brand: 'Tyco / Vương quốc Anh',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF004' },
@@ -150,7 +150,7 @@ export const categories = [
         id: 'ff005',
         code: 'FF005',
         name: 'Đầu phun Sprinkler Upright K=11.2',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/ff05(1.png",
         brand: 'Tyco / Vương quốc Anh',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF005' },
@@ -174,7 +174,7 @@ export const categories = [
         id: 'ff007',
         code: 'FF007',
         name: 'Van báo động (Alarm Check Valve)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Tyco / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF007' },
@@ -191,7 +191,7 @@ export const categories = [
         id: 'ff008',
         code: 'FF008',
         name: 'Van giảm áp (Pressure Reducing Valve)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Tyco / Vương quốc Anh',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF008' },
@@ -208,7 +208,7 @@ export const categories = [
         id: 'ff009',
         code: 'FF009',
         name: 'Van cổng OS&Y (Gate Valve)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Fivalco / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF009' },
@@ -225,7 +225,7 @@ export const categories = [
         id: 'ff010',
         code: 'FF010',
         name: 'Công tắc dòng chảy (Flow Switch)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Potter / Hoa Kỳ',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF010' },
@@ -239,7 +239,7 @@ export const categories = [
         id: 'ff011',
         code: 'FF011',
         name: 'Công tắc giám sát van cổng (Supervisory Switch)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Potter / Hoa Kỳ',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF011' },
@@ -253,7 +253,7 @@ export const categories = [
         id: 'ff014',
         code: 'FF014',
         name: 'Van góc (Angle Gate Valve)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Shin Yi / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF014' },
@@ -266,7 +266,7 @@ export const categories = [
         id: 'ff015',
         code: 'FF015',
         name: 'Van xả khí tự động (Automatic Air Valve)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Shin Yi / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF015' },
@@ -281,7 +281,7 @@ export const categories = [
         id: 'ff021',
         code: 'FF021',
         name: 'Van bướm (Butterfly Valve)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Fivalco / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF021' },
@@ -304,7 +304,7 @@ export const categories = [
         id: 'ff012',
         code: 'FF012',
         name: 'Cuộn vòi chữa cháy (Fire Hose Reel)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Jakob / Đức',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF012' },
@@ -318,7 +318,7 @@ export const categories = [
         id: 'ff013',
         code: 'FF013',
         name: 'Lăng phun chữa cháy (Fire Nozzle)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'DSW / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF013' },
@@ -333,7 +333,7 @@ export const categories = [
         id: 'ff020',
         code: 'FF020',
         name: 'Tủ đựng cuộn vòi chữa cháy (Fire Hose Reel Cabinet)',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Bảo An Engineering / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF020' },
@@ -355,7 +355,7 @@ export const categories = [
         id: 'ff006-co2',
         code: 'FF006',
         name: 'Bình chữa cháy CO2 5kg',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/ff06.png",
         brand: 'Eversafe / Malaysia',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF006' },
@@ -370,7 +370,7 @@ export const categories = [
         id: 'ff006-abc',
         code: 'FF006',
         name: 'Bình chữa cháy bột ABC 4kg',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Eversafe / Malaysia',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF006' },
@@ -392,7 +392,7 @@ export const categories = [
         id: 'ff022',
         code: 'FF022',
         name: 'Hệ sơn lót & sơn phủ ống PCCC',
-        img: PLACEHOLDER_IMG,
+        img: "/images/san-pham/seahongthep.png",
         brand: 'Jotun / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF022' },
