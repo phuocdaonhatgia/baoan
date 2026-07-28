@@ -10,9 +10,10 @@ const projects = [
   { slug: 'majestic-hotel', name: 'Khách sạn Cửu Long — Majestic', location: 'TP. Hồ Chí Minh', systems: ['Sprinkler tự động', 'Báo cháy tự động', 'Hosereel'], img: '/images/projects/majestic.jpg' },
  { slug: 'hung-ngan',           name: 'Khu cao tầng Hưng Ngân', detail: 'TP. Hồ Chí Minh', systems: ['Hệ thống PCCC & chống sét Block B1'], img: '/images/projects/hung ngan.jpg' },
 { slug: 'imperial-vung-tau',   name: 'The Imperial Residences', location: 'Vũng Tàu', systems: ['Sprinkler', 'Chữa cháy vách tường', 'Báo cháy tự động'], img: '/images/projects/imperial.webp' },
-  { name: 'Khách sạn Bình Minh — Phan Thiết', location: 'Bình Thuận', systems: ['Báo cháy tự động', 'Tổng đài điện thoại'], img: '/images/projects/khach-san.jpg' },
-    { name: 'Biệt thự Villa khu đô thị Sala Thủ Thiêm', location: 'Hồ Chí Minh', systems: ['Chữa cháy tự động Sprinkler','Chữa cháy vách tường'], img: '/images/projects/bietthu.jpg' },
+  {slug: 'khach-san-binh-minh', name: 'Khách sạn Bình Minh — Phan Thiết', location: 'Bình Thuận', systems: ['Báo cháy tự động', 'Tổng đài điện thoại'], img: '/images/projects/khach-san.jpg' },
+    { slug: 'biet-thu-villa-sala-thu-thiem', name: 'Biệt thự Villa khu đô thị Sala Thủ Thiêm', location: 'Hồ Chí Minh', systems: ['Chữa cháy tự động Sprinkler','Chữa cháy vách tường'], img: '/images/projects/bietthu.jpg' },
    { slug: 'riviera-point',  name: 'Riviera Point Quận 7',  location: 'Hồ Chí Minh', systems: ['Thiết kế PCCC', 'Hệ thống chống sét'], img: '/images/projects/river.jpeg' },
+      { slug: 'spring-light-city',  name: 'Spring Light City',  location: 'Hồ Chí Minh', systems: ['Thiết kế kiến trúc và PCCC'], img: '/images/projects/springlight.jpg' },
 ]
 
 export default function KhachSanPage() {

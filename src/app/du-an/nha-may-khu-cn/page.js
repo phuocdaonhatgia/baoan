@@ -19,7 +19,6 @@ const projects = [
   { slug: 'cong-ty-san-xuat-thien-bao', name: 'Công Ty TNHH Sản Xuất Thương Mại Quốc Tế Thiên Bảo', location: 'Hồ Chí Minh', systems: ['Sprinkler tự động', 'Chữa cháy vách tường', 'Bình chữa cháy xách tay','Hệ thống Báo cháy','Hệ thống chống sét'], img: '/images/projects/thienbao.jpg' },
   { slug: 'nha-may-duoc-gelatin-capsule', name: 'Nhà máy dược Gelatin Capsule', location: 'Đồng Nai', systems: ['Chữa cháy tự động', 'Chữa cháy vách tường', 'Họng nước cứu hỏa'], img: '/images/projects/gelatin.jpg' },
     { slug: 'nha-may-dutch-lady-binh-duong',name: 'Nhà máy Dutch Lady Bình Dương', location: 'Bình Dương', systems: ['Sprinkler tự động'], img: '/images/projects/binhduong.jpeg' },
-  {  slug: 'nha-may-bel', name: 'Nhà máy Bel', location: 'Bình Dương', systems: ['............'], img: '/images/projects/bel.jpg' },
 ]
 
 export default function NhaMayKhuCNPage() {

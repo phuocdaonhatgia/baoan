@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from "next/image";
 
 // Thay số Zalo của Bảo An vào đây
-const ZALO_NUMBER = '0968552345'
+const ZALO_NUMBER = '0777799221 '
 const PHONE_NUMBER = '+84968552345'
 
 export default function FloatingButtons() {
