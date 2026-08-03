@@ -91,7 +91,7 @@ export const categories = [
         id: 'ff018',
         code: 'FF018',
         name: 'Khớp nối rãnh (Grooved Coupling) Type 1G',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff018.png",
         brand: 'WPT (Weifang Changsheng Pipe) / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF018' },
@@ -109,7 +109,7 @@ export const categories = [
         id: 'ff019',
         code: 'FF019',
         name: 'Mặt bích thép cacbon Slip On',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff019.png",
         brand: 'Phú Long / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF019' },
@@ -212,7 +212,7 @@ export const categories = [
         id: 'ff007',
         code: 'FF007',
         name: 'Van báo động (Alarm Check Valve)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff07.png",
         brand: 'Tyco / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF007' },
@@ -229,7 +229,7 @@ export const categories = [
         id: 'ff008',
         code: 'FF008',
         name: 'Van giảm áp (Pressure Reducing Valve)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff08.png",
         brand: 'Tyco / Vương quốc Anh',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF008' },
@@ -246,7 +246,7 @@ export const categories = [
         id: 'ff009',
         code: 'FF009',
         name: 'Van cổng OS&Y (Gate Valve)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff09.png",
         brand: 'Fivalco / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF009' },
@@ -263,7 +263,7 @@ export const categories = [
         id: 'ff010',
         code: 'FF010',
         name: 'Công tắc dòng chảy (Flow Switch)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff010.png",
         brand: 'Potter / Hoa Kỳ',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF010' },
@@ -277,7 +277,7 @@ export const categories = [
         id: 'ff011',
         code: 'FF011',
         name: 'Công tắc giám sát van cổng (Supervisory Switch)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff011.png",
         brand: 'Potter / Hoa Kỳ',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF011' },
@@ -291,7 +291,7 @@ export const categories = [
         id: 'ff014',
         code: 'FF014',
         name: 'Van góc chữa cháy (Angle Gate Valve / Indoor Fire Hydrant)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff014.png",
         brand: 'Shin Yi / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF014' },
@@ -315,7 +315,7 @@ export const categories = [
         id: 'ff015',
         code: 'FF015',
         name: 'Van xả khí tự động (Automatic Air Release Valve)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff015.png",
         brand: 'Shin Yi / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF015' },
@@ -337,7 +337,7 @@ export const categories = [
         id: 'ff021',
         code: 'FF021',
         name: 'Van bướm (Butterfly Valve) — Fireriser Wafer Type',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff021.png",
         brand: 'Fivalco / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF021' },
@@ -368,7 +368,7 @@ export const categories = [
         id: 'ff012',
         code: 'FF012',
         name: 'Cuộn vòi chữa cháy (Fire Hose Reel) DN50 x 30m',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff012.png",
         brand: 'Jakob Eschbach / Đức',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF012' },
@@ -390,7 +390,7 @@ export const categories = [
         id: 'ff013',
         code: 'FF013',
         name: 'Lăng phun chữa cháy (Fire Nozzle) DN50',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff013.png",
         brand: 'DSW / Trung Quốc',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF013' },
@@ -406,7 +406,7 @@ export const categories = [
         id: 'ff020',
         code: 'FF020',
         name: 'Tủ đựng cuộn vòi chữa cháy (Fire Hose Reel Cabinet)',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff020.png",
         brand: 'Bảo An Engineering / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF020' },
@@ -433,7 +433,7 @@ export const categories = [
         id: 'ff006-co2',
         code: 'FF006',
         name: 'Bình chữa cháy CO2 ECO-11HH 5kg',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff06.png",
         brand: 'Eversafe / Malaysia',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF006' },
@@ -461,7 +461,7 @@ export const categories = [
         id: 'ff006-abc',
         code: 'FF006',
         name: 'Bình chữa cháy bột ABC EC-4 4kg',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff06 (1).png",
         brand: 'Eversafe / Malaysia',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF006' },
@@ -495,7 +495,7 @@ export const categories = [
         id: 'ff022',
         code: 'FF022',
         name: 'Hệ sơn lót & sơn phủ ống PCCC',
-        img: "/images/san-pham/seahongthep.png",
+        img: "/images/san-pham/ff022.png",
         brand: 'Jotun / Việt Nam',
         specs: [
           { label: 'Mã sản phẩm', value: 'FF022' },

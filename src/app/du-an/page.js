@@ -63,7 +63,7 @@ const projectGroups = [
 ]
 
 const refProjects = [
-  { stt: 1,  name: 'Intel Việt Nam', systems: 'Hệ thống chữa cháy tự động', year: '2008' },
+  { stt: 1,  name: 'Intel Việt Nam', systems: 'Hệ thống chữa cháy tự động', year: '2010' },
   { stt: 2,  name: 'Colgate Palmolive', systems: 'Hệ thống chữa cháy tự động', year: '2008' },
   { stt: 3,  name: 'Big C Đồng Nai mở rộng (Gói thầu C3)', systems: 'Chữa cháy tự động · Ngoài trời · Vách tường · Báo cháy', year: '2007' },
   { stt: 4,  name: 'Big C Gò Vấp', systems: 'Hệ thống báo cháy', year: '2007' },
@@ -86,7 +86,7 @@ const refProjects = [
   { stt: 21, name: 'Nhà Máy Dược Sanofi Việt Nam', systems: 'Hệ thống chữa cháy tự động', year: '2000' },
   { stt: 22, name: 'Khách sạn Cửu Long – Majestic', systems: 'Chữa cháy tự động · Báo cháy', year: '2000' },
   { stt: 23, name: 'Shell Gò Dầu', systems: 'Chữa cháy Foam · Báo cháy', year: '1999' },
-  { stt: 24, name: 'Khách sạn Bình Minh – Phan Thiết', systems: 'Báo cháy · Tổng đài điện thoại', year: '1999' },
+  { stt: 24, name: 'Khách sạn Bình Minh – Phan Thiết', systems: 'Báo cháy · Tổng đài điện thoại', year: '1998' },
   { stt: 25, name: 'VP HĐND Tỉnh Vĩnh Long', systems: 'Chữa cháy tự động · Camera quan sát', year: '1998' },
   { stt: 26, name: 'Siêu thị Nhật Nam', systems: 'Chữa cháy tự động · Báo cháy', year: '1998' },
 ]
